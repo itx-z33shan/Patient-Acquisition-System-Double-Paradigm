@@ -77,7 +77,14 @@ function initMobileNav() {
     
     hamburger.classList.toggle('active');
     mobileNav.classList.toggle('open');
-    document.body.style.overflow = isOpen ? '' : 'hidden';
+    
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none'; // Prevent scroll on some browsers
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
+    }
     
     hamburger.setAttribute('aria-expanded', !isOpen);
   };
@@ -86,6 +93,7 @@ function initMobileNav() {
     hamburger.classList.remove('active');
     mobileNav.classList.remove('open');
     document.body.style.overflow = '';
+    document.body.style.touchAction = '';
     hamburger.setAttribute('aria-expanded', 'false');
   };
   
@@ -455,7 +463,8 @@ function initTestimonialsCarousel() {
     const touchEndX = e.changedTouches[0].clientX;
     const diff = touchStartX - touchEndX;
     
-    if (Math.abs(diff) > 50) {
+    // Smooth threshold for swipe
+    if (Math.abs(diff) > 40) {
       goToSlide(currentIndex + (diff > 0 ? 1 : -1));
     }
     

@@ -58,7 +58,7 @@
 
   /* Layout */
   --container-max: 1200px;
-  --container-pad: clamp(28px, 5vw, 96px);
+  --container-pad: clamp(16px, 5vw, 96px);
 
   /* Radius */
   --radius-sm: 6px;
@@ -309,8 +309,18 @@ button {
 .hamburger {
   display: none;
   flex-direction: column;
-  gap: 5px;
-  padding: 8px;
+  gap: 6px;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s ease;
+}
+
+.hamburger:active {
+  background: rgba(27, 58, 92, 0.05);
 }
 
 .hamburger span {
@@ -340,15 +350,17 @@ button {
   right: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-surface);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   padding: var(--space-xl);
 }
 
@@ -1266,7 +1278,7 @@ img-comparison-slider {
     width: 38px;
     height: 38px;
   }
-  
+
   .custom-slider-handle svg {
     width: 16px;
     height: 16px;
@@ -2291,7 +2303,7 @@ img-comparison-slider img {
     }
   }
 
-  }
+}
 
 @media (max-width: 600px) {
   .hero-ctas {
@@ -2359,8 +2371,13 @@ img-comparison-slider img {
     letter-spacing: 0.05em;
   }
 
-  .slider-label.before { left: 12px; }
-  .slider-label.after { right: 12px; }
+  .slider-label.before {
+    left: 12px;
+  }
+
+  .slider-label.after {
+    right: 12px;
+  }
 
   img-comparison-slider img {
     height: 320px;
@@ -2376,6 +2393,7 @@ img-comparison-slider img {
     transition-duration: 0.01ms !important;
   }
 }
+
 /* -- Cookie Banner ------------------------------------------ */
 .cookie-banner {
   position: fixed;
@@ -2442,7 +2460,8 @@ img-comparison-slider img {
   .cookie-banner {
     left: 12px;
     right: 12px;
-    bottom: 12px;
+    bottom: 68px;
+    /* Lifted to sit above the 56px mobile-cta-bar */
     max-width: none;
   }
 }
