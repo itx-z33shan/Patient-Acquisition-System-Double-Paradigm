@@ -21,7 +21,7 @@
   --color-accent: #C4A882;
   --color-accent-light: #E8DDD0;
   --color-text-primary: #1A1A1A;
-  --color-text-muted: #6B7280;
+  --color-text-muted: #525866;
   --color-text-inverse: #FFFFFF;
   --color-success: #2D6A4F;
   --color-border: #E5E0D8;
@@ -1851,12 +1851,12 @@ img-comparison-slider img {
   height: 18px;
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: var(--space-md);
 }
 
@@ -1893,7 +1893,7 @@ img-comparison-slider img {
 
 .footer-gdc {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
   margin-top: var(--space-md);
   padding-top: var(--space-md);
   border-top: 1px solid rgba(255, 255, 255, 0.04);
@@ -1913,7 +1913,7 @@ img-comparison-slider img {
 .footer-bottom-center,
 .footer-bottom-right {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-bottom-center {

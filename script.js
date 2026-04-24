@@ -516,24 +516,7 @@ function splitHeroWords() {
     .join(' ');
 }
 
-/* ════════════════════════════════════════════════════════════
-   PERFORMANCE MONITORING (Optional Debug)
-   ════════════════════════════════════════════════════════════ */
-if (window.performance && window.performance.mark) {
-  performance.mark('app-initialized');
-  
-  window.addEventListener('load', () => {
-    performance.mark('app-fully-loaded');
-    
-    if (console.log) {
-      const perfData = performance.getEntriesByType('navigation')[0];
-      console.log('⚡ Performance:', {
-        DOMContentLoaded: Math.round(perfData.domContentLoadedEventEnd - perfData.fetchStart),
-        FullLoad: Math.round(perfData.loadEventEnd - perfData.fetchStart)
-      });
-    }
-  });
-}
+// Performance monitoring removed for production. Use Lighthouse for accurate metrics.
 /* ------------------------------------------------------------
    COOKIE CONSENT
    ------------------------------------------------------------ */

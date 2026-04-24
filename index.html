@@ -11,21 +11,46 @@
   
   <title>Double Paradigm — Patient Acquisition Systems for UK Dental Clinics</title>
 
-  <!-- Preconnect -->
+  <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+  <!-- Optimized Font Loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+
+  <style>
+    :root {
+      --color-bg: #F8F7F4;
+      --color-primary: #1B3A5C;
+      --color-accent: #C4A882;
+      --color-text-primary: #1A1A1A;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "DM Sans", system-ui, sans-serif;
+      --space-xl: 80px;
+    }
+    body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text-primary); margin: 0; -webkit-font-smoothing: antialiased; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 28px clamp(16px, 5vw, 96px); position: absolute; top: 0; left: 0; right: 0; z-index: 1000; }
+    .hero { padding-top: 140px; padding-bottom: var(--space-xl); overflow: hidden; }
+    .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
+    .hero-headline { font-family: var(--font-display); font-size: clamp(32px, 8vw, 92px); line-height: 1.05; color: var(--color-primary); margin-bottom: 24px; font-weight: 600; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 96px); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 32px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } .navbar { padding: 20px 20px; } }
+  </style>
+
 
   <!-- External Libraries -->
-  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@8/dist/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@8/dist/styles.css" media="print" onload="this.media='all'">
 
   <!-- Main Styles -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- CookieYes Consent -->
-  <script src="https://cdn-cookieyes.com/client_data/placeholder/script.js" defer></script>
+  <!-- CookieYes Consent (Add valid script URL here in production) -->
 </head>
 
 <body>
@@ -123,7 +148,7 @@
         </div>
 
         <div class="hero-card hero-card-rating">
-          <div class="hero-card-stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+          <div class="hero-card-stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</div>
           <div class="hero-card-rating-number">4.9</div>
           <div class="hero-card-rating-label">128 Google Reviews</div>
         </div>
@@ -501,7 +526,7 @@
     <div class="testimonials-grid">
       
       <article class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.
         </blockquote>
@@ -517,7 +542,7 @@
       </article>
 
       <article class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           The AI booking system means we never miss an enquiry again. Worth every penny.
         </blockquote>
@@ -533,7 +558,7 @@
       </article>
 
       <article class="testimonial-card reveal reveal-delay-3">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
         <blockquote class="testimonial-quote">
           Our website now looks as premium as our clinic. Patients comment on it.
         </blockquote>
@@ -556,7 +581,7 @@
         
         <div class="carousel-slide">
           <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-quote">We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.</blockquote>
             <div class="testimonial-author">
               <div class="testimonial-avatar"><img src="images/dr-avatar-1.webp" alt="Dr. Patel" width="48" height="48" loading="lazy"></div>
@@ -567,7 +592,7 @@
 
         <div class="carousel-slide">
           <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-quote">The AI booking system means we never miss an enquiry again. Worth every penny.</blockquote>
             <div class="testimonial-author">
               <div class="testimonial-avatar"><img src="images/dr-avatar-2.webp" alt="Dr. Ahmed" width="48" height="48" loading="lazy"></div>
@@ -578,7 +603,7 @@
 
         <div class="carousel-slide">
           <article class="testimonial-card">
-            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote class="testimonial-quote">Our website now looks as premium as our clinic. Patients comment on it.</blockquote>
             <div class="testimonial-author">
               <div class="testimonial-avatar"><img src="images/dr-avatar-3.webp" alt="Dr. Williams" width="48" height="48" loading="lazy"></div>
@@ -800,7 +825,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#how-it-works">How It Works</a></li>
@@ -811,7 +836,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <ul>
           <li><span>Website Design</span></li>
           <li><span>AI Booking System</span></li>
@@ -822,7 +847,7 @@
       </div>
 
       <div class="footer-col">
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <ul>
           <li>
             <div class="footer-contact-item">
@@ -861,7 +886,7 @@
 
     <div class="footer-bottom">
       <div class="footer-bottom-left">
-        &copy; 2025 Double Paradigm Ltd. All rights reserved.
+        &copy; 2026 Double Paradigm Ltd. All rights reserved.
       </div>
       <div class="footer-bottom-center">
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -880,7 +905,7 @@
 <!-- Mobile CTA Bar -->
 <div class="mobile-cta-bar">
   <a href="tel:+442079460123" aria-label="Call: 020 7946 0123">
-    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
     </svg>
     Call Now — 020 7946 0123
