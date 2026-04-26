@@ -1,0 +1,12 @@
+{
+  "name": "smile-dental-care",
+  "version": "1.0.0",
+  "description": "Smile Dental Care — Premium Patient Acquisition Landing Page",
+  "scripts": {
+    "build": "node generate-config.js",
+    "dev": "python -m http.server 8000"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

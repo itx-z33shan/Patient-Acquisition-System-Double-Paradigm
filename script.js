@@ -22,6 +22,14 @@ function waitForGSAP(callback) {
 
 /* ── DOM Ready Init ────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
+  // Apply config values that can't be set declaratively in HTML
+  const waBtn = document.getElementById('whatsappFloatBtn');
+  if (waBtn && window.SITE_CONFIG) {
+    waBtn.href = `https://wa.me/${window.SITE_CONFIG.WHATSAPP_NUMBER}`;
+    waBtn.target = '_blank';
+    waBtn.rel = 'noopener noreferrer';
+  }
+
   splitHeroWords();
   initNavbar();
   initMobileNav();
@@ -34,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageSpeedRing();
   initCookieConsent();
   initCaseStudyToggle();
+  initTGSliders();
   initOfflineGame();
   initChatbot();
   waitForGSAP(initGSAP);
@@ -297,7 +306,7 @@ function initDemoForm() {
 
     // Construct WhatsApp message
     const message = `*New Consultation Request!*\n\n*Name:* ${userName}\n*Phone:* ${phone}`;
-    const whatsappUrl = `https://wa.me/923119660535?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${window.SITE_CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
     // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -368,7 +377,7 @@ function initAuditForm() {
 
     // Construct WhatsApp message
     const message = `*New Free Audit Request!*\n\n*Clinic:* ${clinicName}\n*Owner:* ${ownerName}\n*Phone:* ${phone}\n*Email:* ${email}`;
-    const whatsappUrl = `https://wa.me/923119660535?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${window.SITE_CONFIG.WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
     // Redirect to WhatsApp
     window.open(whatsappUrl, '_blank');
@@ -600,6 +609,58 @@ function initCaseStudyToggle() {
       imgAfter.classList.add('active');
       imgBefore.classList.remove('active');
     });
+  });
+}
+
+/* ════════════════════════════════════════════════════════════
+   TRANSFORMATION GALLERY — DRAG SLIDER
+   ════════════════════════════════════════════════════════════ */
+function initTGSliders() {
+  const sliders = document.querySelectorAll('[data-tg-slider]');
+  if (!sliders.length) return;
+
+  sliders.forEach(slider => {
+    const after   = slider.querySelector('.tg-after');
+    const divider = slider.querySelector('.tg-divider');
+    if (!after || !divider) return;
+
+    let dragging = false;
+
+    function setPosition(clientX) {
+      const rect = slider.getBoundingClientRect();
+      let pct = ((clientX - rect.left) / rect.width) * 100;
+      pct = Math.max(2, Math.min(98, pct));
+      // Clip after image from the left edge to the divider position
+      after.style.clipPath   = `inset(0 ${100 - pct}% 0 0)`;
+      divider.style.left     = `${pct}%`;
+    }
+
+    // Mouse events
+    slider.addEventListener('mousedown', e => {
+      dragging = true;
+      setPosition(e.clientX);
+      e.preventDefault();
+    });
+
+    window.addEventListener('mousemove', e => {
+      if (!dragging) return;
+      setPosition(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => { dragging = false; });
+
+    // Touch events
+    slider.addEventListener('touchstart', e => {
+      dragging = true;
+      setPosition(e.touches[0].clientX);
+    }, { passive: true });
+
+    window.addEventListener('touchmove', e => {
+      if (!dragging) return;
+      setPosition(e.touches[0].clientX);
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => { dragging = false; });
   });
 }
 
@@ -885,9 +946,9 @@ function initChatbot() {
 
   if (!chatbot || !fab || !window_el || !form) return;
 
-  // API Config
-  const API_KEY = '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';
-  const MODEL = 'openai/gpt-oss-120b:free';
+  // API Config — values loaded from config.js (window.SITE_CONFIG)
+  const API_KEY = window.SITE_CONFIG.OPENROUTER_API_KEY;
+  const MODEL   = window.SITE_CONFIG.OPENROUTER_MODEL;
   
   let chatHistory = [
     { 

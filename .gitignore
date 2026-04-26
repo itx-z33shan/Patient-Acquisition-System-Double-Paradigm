@@ -1,0 +1,20 @@
+# ── Secrets (NEVER commit these) ───────────────────────────
+.env
+
+# ── Auto-generated at Vercel build time (from env vars) ────
+# Run locally with: node generate-config.js
+config.js
+
+# ── Runtime config with real keys (NEVER commit) ───────────
+# Rename config.js to config.example.js and add real keys locally
+# config.js
+
+# ── OS / Editor ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/settings.json
+
+# ── Node (if ever used) ─────────────────────────────────────
+node_modules/

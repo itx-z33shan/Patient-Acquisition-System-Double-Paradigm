@@ -81,7 +81,7 @@
     </ul>
 
     <div class="nav-right">
-      <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zeshansos510/double-paradigm-booking'}); return false;" class="btn btn-primary btn-nav">Book Appointment</a>
+      <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-nav">Book Appointment</a>
       <a href="#audit" class="btn btn-secondary btn-nav" style="margin-right: 15px;">Free Audit</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
@@ -125,7 +125,7 @@
         </p>
 
         <div class="hero-ctas">
-          <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zeshansos510/double-paradigm-booking'}); return false;" class="btn btn-primary btn-hero">
+          <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-hero">
             Book via Calendly
           </a>
           <a href="#results" class="btn btn-secondary btn-hero">View Transformations</a>
@@ -464,207 +464,167 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     SMILE TRANSFORMATIONS (Requested UI Style)
+     SMILE TRANSFORMATIONS — Drag Slider Gallery
      ══════════════════════════════════════════════════════════ -->
 <section class="section-transformations" id="results">
   <div class="container">
-    
+
     <div class="section-header section-header-center reveal">
       <span class="section-label">Gallery</span>
       <h2 class="section-headline">Smile Transformations</h2>
       <p class="section-subtext">
-        Real patients. Real results. See how we have helped hundreds of people regain their confidence.
+        Real patients. Real results. Drag the slider to reveal the transformation.
       </p>
     </div>
 
-    <div class="case-study-card reveal">
-      
-      <!-- Left: Image Area with Toggle -->
-      <div class="case-study-visual">
-        <div class="case-study-img-container">
-          <img src="images/dental_before_after_whitening_before.webp" alt="Teeth Whitening Before" class="case-img case-img-before active">
-          <img src="images/dental_before_after_whitening_after.webp" alt="Teeth Whitening After" class="case-img case-img-after">
+    <div class="tg-grid">
+
+      <!-- Card 1: Orthodontic Treatment -->
+      <div class="tg-card reveal reveal-delay-1">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/implants_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/implants_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
         </div>
-        
-        <div class="case-study-toggle">
-          <button class="case-toggle-btn btn-before active">Before</button>
-          <button class="case-toggle-btn btn-after">After</button>
+        <div class="tg-info">
+          <h3 class="tg-title">Orthodontic Treatment</h3>
+          <p class="tg-desc">Complete orthodontic correction that transformed crooked teeth into a perfectly aligned, beautiful smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Orthodontic Alignment</span>
+            <span class="tg-tag">Cosmetic Dentistry</span>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Case Details -->
-      <div class="case-study-details">
-        <div class="case-badges">
-          <span class="case-badge">Whitening & Bonding</span>
-          <span class="case-badge">Single Visit</span>
-        </div>
-
-        <h3 class="case-title">Elite Smile Makeover — London</h3>
-
-        <div class="case-stats">
-          <div class="case-stat">
-            <span class="stat-name">Treatment Time</span>
-            <span class="stat-value">60 mins</span>
+      <!-- Card 2: Cosmetic Dentistry -->
+      <div class="tg-card reveal reveal-delay-2">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
+          <div class="tg-after"  style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </div>
-          <div class="case-stat">
-            <span class="stat-name">Shade Improvement</span>
-            <span class="stat-value">8 Shades</span>
-          </div>
-          <div class="case-stat">
-            <span class="stat-name">Patient Comfort</span>
-            <span class="stat-value">10/10</span>
-          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
         </div>
-
-        <blockquote class="case-testimonial">
-          "The transformation is unbelievable. I never thought my teeth could look this white in just one hour. The team was amazing!"
-          <footer>— Sarah J.</footer>
-        </blockquote>
-      </div>
-
-    </div>
-
-    <div class="case-study-card reveal">
-      
-      <!-- Left: Image Area with Toggle -->
-      <div class="case-study-visual">
-        <div class="case-study-img-container">
-          <img src="images/implants_before.png" alt="Dental Implants Before" class="case-img case-img-before active">
-          <img src="images/implants_after.png" alt="Dental Implants After" class="case-img case-img-after">
-        </div>
-        
-        <div class="case-study-toggle">
-          <button class="case-toggle-btn btn-before active">Before</button>
-          <button class="case-toggle-btn btn-after">After</button>
+        <div class="tg-info">
+          <h3 class="tg-title">Cosmetic Dentistry</h3>
+          <p class="tg-desc">A transformative cosmetic treatment using custom-designed veneers to enhance tooth shape, close gaps, and create a naturally brighter, more confident smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Custom Veneers</span>
+            <span class="tg-tag">Smile Enhancement</span>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Case Details -->
-      <div class="case-study-details">
-        <div class="case-badges">
-          <span class="case-badge">Full Arch Implants</span>
-          <span class="case-badge">Restoration</span>
-        </div>
-
-        <h3 class="case-title">Complete Smile Reconstruction</h3>
-
-        <div class="case-stats">
-          <div class="case-stat">
-            <span class="stat-name">Complexity</span>
-            <span class="stat-value">Advanced</span>
+      <!-- Card 3: Dental Implant Restoration -->
+      <div class="tg-card reveal reveal-delay-3">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/veneers_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/veneers_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </div>
-          <div class="case-stat">
-            <span class="stat-name">Functionality</span>
-            <span class="stat-value">100% Restored</span>
-          </div>
-          <div class="case-stat">
-            <span class="stat-name">Confidence Score</span>
-            <span class="stat-value">Life Changing</span>
-          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
         </div>
-
-        <blockquote class="case-testimonial">
-          "I can finally eat and smile with confidence again. The implant process was seamless and the results are better than I ever imagined."
-          <footer>— David R.</footer>
-        </blockquote>
-      </div>
-
-    </div>
-
-    <div class="case-study-card reveal">
-      
-      <!-- Left: Image Area with Toggle -->
-      <div class="case-study-visual">
-        <div class="case-study-img-container">
-          <img src="images/invisalign_before.png" alt="Invisalign Before" class="case-img case-img-before active">
-          <img src="images/invisalign_after.png" alt="Invisalign After" class="case-img case-img-after">
-        </div>
-        
-        <div class="case-study-toggle">
-          <button class="case-toggle-btn btn-before active">Before</button>
-          <button class="case-toggle-btn btn-after">After</button>
+        <div class="tg-info">
+          <h3 class="tg-title">Dental Implant Restoration</h3>
+          <p class="tg-desc">Dental implant placement that replaced a missing tooth with a natural-looking, permanent solution.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Dental Implant</span>
+            <span class="tg-tag">Orthodontic Alignment</span>
+            <span class="tg-tag">Custom Veneers</span>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Case Details -->
-      <div class="case-study-details">
-        <div class="case-badges">
-          <span class="case-badge">Invisalign Clear Aligners</span>
-          <span class="case-badge">Non-Invasive</span>
-        </div>
-
-        <h3 class="case-title">Precision Orthodontic Alignment</h3>
-
-        <div class="case-stats">
-          <div class="case-stat">
-            <span class="stat-name">Treatment Duration</span>
-            <span class="stat-value">7 Months</span>
+      <!-- Card 4: Invisalign -->
+      <div class="tg-card reveal reveal-delay-1">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/invisalign_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/invisalign_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
           </div>
-          <div class="case-stat">
-            <span class="stat-name">Alignment Accuracy</span>
-            <span class="stat-value">Perfect</span>
-          </div>
-          <div class="case-stat">
-            <span class="stat-name">Discreetness</span>
-            <span class="stat-value">Invisible</span>
-          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
         </div>
-
-        <blockquote class="case-testimonial">
-          "Nobody even knew I was wearing them! My teeth are now perfectly straight and I couldn't be happier with the journey."
-          <footer>— Emily T.</footer>
-        </blockquote>
-      </div>
-
-    </div>
-
-    <div class="case-study-card reveal">
-      
-      <!-- Left: Image Area with Toggle -->
-      <div class="case-study-visual">
-        <div class="case-study-img-container">
-          <img src="images/veneers_before.png" alt="Veneers Before" class="case-img case-img-before active">
-          <img src="images/veneers_after.png" alt="Veneers After" class="case-img case-img-after">
-        </div>
-        
-        <div class="case-study-toggle">
-          <button class="case-toggle-btn btn-before active">Before</button>
-          <button class="case-toggle-btn btn-after">After</button>
+        <div class="tg-info">
+          <h3 class="tg-title">Invisalign Clear Aligners</h3>
+          <p class="tg-desc">Discreet orthodontic treatment that gently moved crowded teeth into perfect alignment over 7 months — invisible to everyone.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Invisalign</span>
+            <span class="tg-tag">Non-Invasive</span>
+          </div>
         </div>
       </div>
 
-      <!-- Right: Case Details -->
-      <div class="case-study-details">
-        <div class="case-badges">
-          <span class="case-badge">Porcelain Veneers</span>
-          <span class="case-badge">Cosmetic Mastery</span>
+      <!-- Card 5: Whitening -->
+      <div class="tg-card reveal reveal-delay-2">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
+          <div class="tg-after"  style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
         </div>
-
-        <h3 class="case-title">Total Porcelain Smile Makeover</h3>
-
-        <div class="case-stats">
-          <div class="case-stat">
-            <span class="stat-name">Custom Shading</span>
-            <span class="stat-value">Natural White</span>
-          </div>
-          <div class="case-stat">
-            <span class="stat-name">Symmetry</span>
-            <span class="stat-value">Perfected</span>
-          </div>
-          <div class="case-stat">
-            <span class="stat-name">Durability</span>
-            <span class="stat-value">15+ Years</span>
+        <div class="tg-info">
+          <h3 class="tg-title">Elite Teeth Whitening</h3>
+          <p class="tg-desc">Professional in-chair whitening treatment that lifted 8 shades in a single 60-minute session, restoring a radiant, youthful smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Whitening</span>
+            <span class="tg-tag">Single Visit</span>
           </div>
         </div>
-
-        <blockquote class="case-testimonial">
-          "The attention to detail was phenomenal. My new veneers look so natural and have completely transformed my face."
-          <footer>— Michael S.</footer>
-        </blockquote>
       </div>
 
-    </div>
+      <!-- Card 6: Full Smile Makeover -->
+      <div class="tg-card reveal reveal-delay-3">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/implants_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/implants_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
+        </div>
+        <div class="tg-info">
+          <h3 class="tg-title">Full Arch Reconstruction</h3>
+          <p class="tg-desc">Complete full-arch implant restoration that gave a patient back full functionality and a life-changing natural smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Full Arch Implants</span>
+            <span class="tg-tag">Restoration</span>
+          </div>
+        </div>
+      </div>
 
+    </div><!-- /.tg-grid -->
   </div>
 </section>
 
@@ -1070,6 +1030,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="config.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script type="module" src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
@@ -1088,7 +1049,7 @@
 
 <!-- Floating Widgets -->
 <div class="floating-widgets" id="smileChatbot">
-  <a href="https://wa.me/+923119660535" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+  <a id="whatsappFloatBtn" href="#" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
     <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.119.554 4.188 1.605 6.046L0 24l6.104-1.602a11.803 11.803 0 005.94 1.605h.005c6.635 0 12.03-5.393 12.035-12.03a11.797 11.797 0 00-3.447-8.411z"/>
     </svg>
