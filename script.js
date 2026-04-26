@@ -43,10 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
   initCookieConsent();
   initCaseStudyToggle();
   initTGSliders();
+  initBackToTop();
   initOfflineGame();
   initChatbot();
   waitForGSAP(initGSAP);
 });
+
+/* ════════════════════════════════════════════════════════════
+   BACK TO TOP
+   ════════════════════════════════════════════════════════════ */
+function initBackToTop() {
+  const btn = document.getElementById('backToTop');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 /* ════════════════════════════════════════════════════════════
    NAVIGATION
