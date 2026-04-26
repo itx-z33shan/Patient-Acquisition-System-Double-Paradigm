@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Double Paradigm — The #1 Patient Acquisition System for UK Dental Clinics. We build high-converting websites and AI booking systems that turn browsers into booked patients.">
+  <meta name="description" content="Smile Dental Care — Premium Cosmetic & General Dentistry in London. Experience world-class dental care in a luxury clinical environment.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Double Paradigm — Patient Acquisition Systems for UK Dental Clinics">
-  <meta property="og:description" content="We build more than a website. We build systems that turn browsers into booked patients — automatically.">
+  <meta property="og:title" content="Smile Dental Care — Clinical Excellence · Luxury Care">
+  <meta property="og:description" content="Experience world-class dental care in a luxury clinical environment. Specializing in Invisalign, dental implants, and cosmetic smile makeovers.">
   <meta property="og:type" content="website">
   
-  <title>Double Paradigm — Patient Acquisition Systems for UK Dental Clinics</title>
+  <title>Smile Dental Care — Clinical Excellence · Luxury Care</title>
 
   <!-- Preconnect for Performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,9 +18,8 @@
   <!-- Optimized Font Loading -->
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&display=swap" rel="stylesheet">
 
-
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+  <link rel="icon" type="image/png" href="favicon.ico">
 
   <style>
     :root {
@@ -33,22 +32,22 @@
       --space-xl: 80px;
     }
     body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text-primary); margin: 0; -webkit-font-smoothing: antialiased; }
-    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 28px clamp(16px, 5vw, 96px); position: absolute; top: 0; left: 0; right: 0; z-index: 1000; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 28px clamp(16px, 5vw, 96px); position: absolute; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(248, 247, 244, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
     .hero { padding-top: 140px; padding-bottom: var(--space-xl); overflow: hidden; }
     .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
-    .hero-headline { font-family: var(--font-display); font-size: clamp(32px, 8vw, 92px); line-height: 1.05; color: var(--color-primary); margin-bottom: 24px; font-weight: 600; }
+    .hero-headline { font-family: var(--font-display); font-size: clamp(32px, 8vw, 92px); line-height: 1.05; color: #fff; margin-bottom: 24px; font-weight: 600; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 96px); }
     .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 32px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
     .btn-primary { background: var(--color-primary); color: #fff; }
     @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } .navbar { padding: 20px 20px; } }
   </style>
 
-
-  <!-- External Libraries -->
-  <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@8/dist/styles.css" media="print" onload="this.media='all'">
+  <!-- Calendly link widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
   <!-- Main Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 
   <!-- CookieYes Consent (Add valid script URL here in production) -->
 </head>
@@ -61,15 +60,16 @@
 <header>
   <nav class="navbar" id="navbar" aria-label="Main navigation">
     
-    <a href="/" class="nav-logo" aria-label="Double Paradigm Home">
+    <a href="/" class="nav-logo" aria-label="Smile Dental Care Home">
       <div class="nav-logo-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+          <path d="M7 10s1 1 5 1 5-1 5-1"/>
         </svg>
       </div>
       <div>
-        <div class="nav-logo-name">Double Paradigm</div>
-        <div class="nav-logo-tagline">Patient Acquisition Systems</div>
+        <div class="nav-logo-name">Smile Dental Care</div>
+        <div class="nav-logo-tagline">Clinical Excellence · Luxury Care</div>
       </div>
     </a>
 
@@ -81,7 +81,8 @@
     </ul>
 
     <div class="nav-right">
-      <a href="#audit" class="btn btn-primary btn-nav">Get Free Audit</a>
+      <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zeshansos510/double-paradigm-booking'}); return false;" class="btn btn-primary btn-nav">Book Appointment</a>
+      <a href="#audit" class="btn btn-secondary btn-nav" style="margin-right: 15px;">Free Audit</a>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -112,25 +113,22 @@
 
       <div class="hero-text">
         <div class="hero-badge">
-          #1 Patient Acquisition System for UK Dental Clinics
+          Premium Cosmetic & General Dentistry
         </div>
 
         <h1 class="hero-headline">
-          Your Clinic Deserves Patients, Not Just Visitors
+          The Smile You Have Always Dreamed Of
         </h1>
 
         <p class="hero-sub">
-          We do not just build websites. We build systems that turn browsers into booked patients — automatically.
+          Experience world-class dental care in a luxury clinical environment. Our expert team specializes in Invisalign, dental implants, and cosmetic smile makeovers.
         </p>
 
         <div class="hero-ctas">
-          <a href="#demo" class="btn btn-primary btn-hero">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <polygon points="5 3 19 12 5 21 5 3"/>
-            </svg>
-            See How It Works
+          <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/zeshansos510/double-paradigm-booking'}); return false;" class="btn btn-primary btn-hero">
+            Book via Calendly
           </a>
-          <a href="#demo" class="btn btn-secondary btn-hero">View Live Demo</a>
+          <a href="#results" class="btn btn-secondary btn-hero">View Transformations</a>
         </div>
       </div>
 
@@ -466,48 +464,206 @@
 </section>
 
 <!-- ══════════════════════════════════════════════════════════
-     BEFORE / AFTER SLIDER
+     SMILE TRANSFORMATIONS (Requested UI Style)
      ══════════════════════════════════════════════════════════ -->
-<section class="section-slider">
+<section class="section-transformations" id="results">
   <div class="container">
     
     <div class="section-header section-header-center reveal">
-      <span class="section-label">Transformation</span>
-      <h2 class="section-headline">This Is What We Replace</h2>
+      <span class="section-label">Gallery</span>
+      <h2 class="section-headline">Smile Transformations</h2>
       <p class="section-subtext">
-        Drag the slider to see the difference between a typical dental website and a Double Paradigm patient acquisition system.
+        Real patients. Real results. See how we have helped hundreds of people regain their confidence.
       </p>
     </div>
 
-    <div class="slider-wrap reveal">
-      <span class="slider-label before" aria-hidden="true">Before — Losing Patients</span>
-      <span class="slider-label after" aria-hidden="true">After — Patients Booking</span>
-
-      <img-comparison-slider>
-        <img slot="first"
-             src="images/before-website.webp"
-             alt="Before: A generic, slow dental clinic website that loses patients"
-             width="900"
-             height="480"
-             loading="lazy">
-        <img slot="second"
-             src="images/after-website.webp"
-             alt="After: A premium Double Paradigm patient acquisition system"
-             width="900"
-             height="480"
-             loading="lazy">
-        <div slot="handle" class="custom-slider-handle">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
+    <div class="case-study-card reveal">
+      
+      <!-- Left: Image Area with Toggle -->
+      <div class="case-study-visual">
+        <div class="case-study-img-container">
+          <img src="images/dental_before_after_whitening_before.webp" alt="Teeth Whitening Before" class="case-img case-img-before active">
+          <img src="images/dental_before_after_whitening_after.webp" alt="Teeth Whitening After" class="case-img case-img-after">
         </div>
-      </img-comparison-slider>
+        
+        <div class="case-study-toggle">
+          <button class="case-toggle-btn btn-before active">Before</button>
+          <button class="case-toggle-btn btn-after">After</button>
+        </div>
+      </div>
+
+      <!-- Right: Case Details -->
+      <div class="case-study-details">
+        <div class="case-badges">
+          <span class="case-badge">Whitening & Bonding</span>
+          <span class="case-badge">Single Visit</span>
+        </div>
+
+        <h3 class="case-title">Elite Smile Makeover — London</h3>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <span class="stat-name">Treatment Time</span>
+            <span class="stat-value">60 mins</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Shade Improvement</span>
+            <span class="stat-value">8 Shades</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Patient Comfort</span>
+            <span class="stat-value">10/10</span>
+          </div>
+        </div>
+
+        <blockquote class="case-testimonial">
+          "The transformation is unbelievable. I never thought my teeth could look this white in just one hour. The team was amazing!"
+          <footer>— Sarah J.</footer>
+        </blockquote>
+      </div>
+
     </div>
 
-    <p class="slider-consent">
-      Images shown with patient consent for illustrative purposes. Results may vary. GDC guidelines adhered to.
-    </p>
+    <div class="case-study-card reveal">
+      
+      <!-- Left: Image Area with Toggle -->
+      <div class="case-study-visual">
+        <div class="case-study-img-container">
+          <img src="images/implants_before.png" alt="Dental Implants Before" class="case-img case-img-before active">
+          <img src="images/implants_after.png" alt="Dental Implants After" class="case-img case-img-after">
+        </div>
+        
+        <div class="case-study-toggle">
+          <button class="case-toggle-btn btn-before active">Before</button>
+          <button class="case-toggle-btn btn-after">After</button>
+        </div>
+      </div>
+
+      <!-- Right: Case Details -->
+      <div class="case-study-details">
+        <div class="case-badges">
+          <span class="case-badge">Full Arch Implants</span>
+          <span class="case-badge">Restoration</span>
+        </div>
+
+        <h3 class="case-title">Complete Smile Reconstruction</h3>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <span class="stat-name">Complexity</span>
+            <span class="stat-value">Advanced</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Functionality</span>
+            <span class="stat-value">100% Restored</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Confidence Score</span>
+            <span class="stat-value">Life Changing</span>
+          </div>
+        </div>
+
+        <blockquote class="case-testimonial">
+          "I can finally eat and smile with confidence again. The implant process was seamless and the results are better than I ever imagined."
+          <footer>— David R.</footer>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <div class="case-study-card reveal">
+      
+      <!-- Left: Image Area with Toggle -->
+      <div class="case-study-visual">
+        <div class="case-study-img-container">
+          <img src="images/invisalign_before.png" alt="Invisalign Before" class="case-img case-img-before active">
+          <img src="images/invisalign_after.png" alt="Invisalign After" class="case-img case-img-after">
+        </div>
+        
+        <div class="case-study-toggle">
+          <button class="case-toggle-btn btn-before active">Before</button>
+          <button class="case-toggle-btn btn-after">After</button>
+        </div>
+      </div>
+
+      <!-- Right: Case Details -->
+      <div class="case-study-details">
+        <div class="case-badges">
+          <span class="case-badge">Invisalign Clear Aligners</span>
+          <span class="case-badge">Non-Invasive</span>
+        </div>
+
+        <h3 class="case-title">Precision Orthodontic Alignment</h3>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <span class="stat-name">Treatment Duration</span>
+            <span class="stat-value">7 Months</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Alignment Accuracy</span>
+            <span class="stat-value">Perfect</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Discreetness</span>
+            <span class="stat-value">Invisible</span>
+          </div>
+        </div>
+
+        <blockquote class="case-testimonial">
+          "Nobody even knew I was wearing them! My teeth are now perfectly straight and I couldn't be happier with the journey."
+          <footer>— Emily T.</footer>
+        </blockquote>
+      </div>
+
+    </div>
+
+    <div class="case-study-card reveal">
+      
+      <!-- Left: Image Area with Toggle -->
+      <div class="case-study-visual">
+        <div class="case-study-img-container">
+          <img src="images/veneers_before.png" alt="Veneers Before" class="case-img case-img-before active">
+          <img src="images/veneers_after.png" alt="Veneers After" class="case-img case-img-after">
+        </div>
+        
+        <div class="case-study-toggle">
+          <button class="case-toggle-btn btn-before active">Before</button>
+          <button class="case-toggle-btn btn-after">After</button>
+        </div>
+      </div>
+
+      <!-- Right: Case Details -->
+      <div class="case-study-details">
+        <div class="case-badges">
+          <span class="case-badge">Porcelain Veneers</span>
+          <span class="case-badge">Cosmetic Mastery</span>
+        </div>
+
+        <h3 class="case-title">Total Porcelain Smile Makeover</h3>
+
+        <div class="case-stats">
+          <div class="case-stat">
+            <span class="stat-name">Custom Shading</span>
+            <span class="stat-value">Natural White</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Symmetry</span>
+            <span class="stat-value">Perfected</span>
+          </div>
+          <div class="case-stat">
+            <span class="stat-name">Durability</span>
+            <span class="stat-value">15+ Years</span>
+          </div>
+        </div>
+
+        <blockquote class="case-testimonial">
+          "The attention to detail was phenomenal. My new veneers look so natural and have completely transformed my face."
+          <footer>— Michael S.</footer>
+        </blockquote>
+      </div>
+
+    </div>
 
   </div>
 </section>
@@ -520,7 +676,7 @@
     
     <div class="section-header section-header-center reveal">
       <span class="section-label">Social Proof</span>
-      <h2 class="section-headline">What Clinic Owners Say</h2>
+      <h2 class="section-headline">What Our Patients Say</h2>
     </div>
 
     <div class="testimonials-grid">
@@ -808,11 +964,12 @@
       <div class="footer-brand">
         <div class="nav-logo-icon footer-logo-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
           </svg>
         </div>
-        <div class="footer-brand-name">Double Paradigm</div>
-        <div class="footer-brand-tagline">Patient Acquisition Systems for UK Dental Clinics</div>
+        <div class="footer-brand-name">Smile Dental Care</div>
+        <div class="footer-brand-tagline">Clinical Excellence · Luxury Care</div>
         <div class="footer-social">
           <a href="https://linkedin.com" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -886,7 +1043,7 @@
 
     <div class="footer-bottom">
       <div class="footer-bottom-left">
-        &copy; 2026 Double Paradigm Ltd. All rights reserved.
+        &copy; 2026 Smile Dental Care. All rights reserved.
       </div>
       <div class="footer-bottom-center">
         <a href="privacy-policy.html">Privacy Policy</a>
@@ -896,7 +1053,7 @@
         <a href="complaints.html">Complaints Procedure</a>
       </div>
       <div class="footer-bottom-right">
-        Built by <span>Double Paradigm</span> — Patient Acquisition Systems for UK Dental Clinics
+        Premium Dental Services for UK Patients
       </div>
     </div>
   </div>
@@ -928,6 +1085,85 @@
   <input name="bot-field">
 </form>
 
+
+<!-- Floating Widgets -->
+<div class="floating-widgets" id="smileChatbot">
+  <a href="https://wa.me/+923119660535" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.119.554 4.188 1.605 6.046L0 24l6.104-1.602a11.803 11.803 0 005.94 1.605h.005c6.635 0 12.03-5.393 12.035-12.03a11.797 11.797 0 00-3.447-8.411z"/>
+    </svg>
+  </a>
+  <div class="float-btn float-chatbot" id="chatbotFab" aria-label="Open AI Assistant">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span class="float-badge">1</span>
+  </div>
+
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
+          </svg>
+        </div>
+        <div>
+          <div class="chatbot-name">Smile AI Assistant</div>
+          <div class="chatbot-status">
+            <span class="status-dot"></span>
+            Online · Instant Response
+          </div>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="chatbot-quick-actions">
+      <button class="chat-pill">💼 Services</button>
+      <button class="chat-pill">💰 Pricing</button>
+      <button class="chat-pill">🚀 Get Started</button>
+      <button class="chat-pill">📊 Results</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message-row">
+        <div class="message-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
+          </svg>
+        </div>
+        <div class="message assistant">
+          <div class="message-content">
+            Hello! 👋 I'm your Smile AI Assistant.
+            <br><br>
+            Whether you're curious about our <strong>services</strong>, <strong>pricing</strong>, or want to see some <strong>real client results</strong> — just ask. I'm here 24/7 to help you achieve your perfect smile today!
+          </div>
+          <div class="message-time">14:13</div>
+        </div>
+      </div>
+    </div>
+
+    <form class="chatbot-input-wrap" id="chatbotForm">
+      <textarea id="chatbotInput" placeholder="Ask me anything..." rows="1" required></textarea>
+      <button type="submit" class="chatbot-send" id="chatbotSend" aria-label="Send Message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </form>
+    <div class="chatbot-footer">Powered by Smile AI</div>
+  </div>
+</div>
+
+
 <!-- Cookie Consent -->
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle">
   <div class="cookie-content">
@@ -938,6 +1174,14 @@
       <button class="btn btn-primary" id="cookieAccept">Accept All</button>
     </div>
   </div>
+</div>
+
+<!-- Offline Game Overlay -->
+<div id="offlineGame">
+  <h2 class="game-title">Oops! You are Offline</h2>
+  <p class="game-sub">While you wait for your connection, help the tooth jump over the sweets!</p>
+  <canvas id="gameCanvas" width="600" height="250"></canvas>
+  <p style="margin-top: 20px; font-weight: 600;">Press SPACE to Jump</p>
 </div>
 
 </body>
