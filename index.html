@@ -1,1229 +1,1175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Smile Dental Care — Premium Cosmetic & General Dentistry in London. Experience world-class dental care in a luxury clinical environment.">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Smile Dental Care — Clinical Excellence · Luxury Care">
-  <meta property="og:description" content="Experience world-class dental care in a luxury clinical environment. Specializing in Invisalign, dental implants, and cosmetic smile makeovers.">
-  <meta property="og:type" content="website">
-  
-  <title>Smile Dental Care — Clinical Excellence · Luxury Care</title>
-
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <!-- Optimized Font Loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.ico">
-
-  <style>
-    :root {
-      --color-bg: #F8F7F4;
-      --color-primary: #1B3A5C;
-      --color-accent: #C4A882;
-      --color-text-primary: #1A1A1A;
-      --font-display: "Cormorant Garamond", Georgia, serif;
-      --font-body: "DM Sans", system-ui, sans-serif;
-      --space-xl: 80px;
-    }
-    body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text-primary); margin: 0; -webkit-font-smoothing: antialiased; }
-    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 28px clamp(16px, 5vw, 96px); position: absolute; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(248, 247, 244, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
-    .hero { padding-top: 140px; padding-bottom: var(--space-xl); overflow: hidden; }
-    .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
-    .hero-headline { font-family: var(--font-display); font-size: clamp(32px, 8vw, 92px); line-height: 1.05; color: #fff; margin-bottom: 24px; font-weight: 600; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 96px); }
-    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 32px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
-    .btn-primary { background: var(--color-primary); color: #fff; }
-    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } .navbar { padding: 20px 20px; } }
-  </style>
-
-  <!-- Calendly link widget -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
-  <!-- Main Styles -->
-  <link rel="stylesheet" href="style.css?v=2">
-
-  <!-- CookieYes Consent (Add valid script URL here in production) -->
-</head>
-
-<body>
-
-<!-- ══════════════════════════════════════════════════════════
-     NAVIGATION
-     ══════════════════════════════════════════════════════════ -->
-<header>
-  <nav class="navbar" id="navbar" aria-label="Main navigation">
-    
-    <a href="/" class="nav-logo" aria-label="Smile Dental Care Home">
-      <div class="nav-logo-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-          <path d="M7 10s1 1 5 1 5-1 5-1"/>
-        </svg>
-      </div>
-      <div>
-        <div class="nav-logo-name">Smile Dental Care</div>
-        <div class="nav-logo-tagline">Clinical Excellence · Luxury Care</div>
-      </div>
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#results">Results</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-    </ul>
-
-    <div class="nav-right">
-      <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-nav">Book Appointment</a>
-      <a href="#audit" class="btn btn-secondary btn-nav" style="margin-right: 15px;">Free Audit</a>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-  </nav>
-
-  <!-- Mobile Menu -->
-  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-    <a href="#services">Services</a>
-    <a href="#how-it-works">How It Works</a>
-    <a href="#results">Results</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#audit" class="btn btn-primary">Get Free Audit</a>
-  </nav>
-</header>
-
-<main>
-
-<!-- ══════════════════════════════════════════════════════════
-     HERO
-     ══════════════════════════════════════════════════════════ -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-inner">
-
-      <div class="hero-text">
-        <div class="hero-badge">
-          Premium Cosmetic & General Dentistry
-        </div>
-
-        <h1 class="hero-headline">
-          The Smile You Have Always Dreamed Of
-        </h1>
-
-        <p class="hero-sub">
-          Experience world-class dental care in a luxury clinical environment. Our expert team specializes in Invisalign, dental implants, and cosmetic smile makeovers.
-        </p>
-
-        <div class="hero-ctas">
-          <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-hero">
-            Book via Calendly
-          </a>
-          <a href="#results" class="btn btn-secondary btn-hero">View Transformations</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        
-        <div class="hero-card hero-card-notification">
-          <div class="hero-card-notification-icon" aria-hidden="true">👤</div>
-          <div class="hero-card-notification-text">
-            <div class="hero-card-notification-title">Sarah M. just requested an appointment</div>
-            <div class="hero-card-notification-time">
-              <span class="green-dot" aria-hidden="true"></span>
-              2 mins ago
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card hero-card-rating">
-          <div class="hero-card-stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</div>
-          <div class="hero-card-rating-number">4.9</div>
-          <div class="hero-card-rating-label">128 Google Reviews</div>
-        </div>
-
-        <div class="hero-card hero-card-stats">
-          <div>
-            <div class="hero-card-stats-number">38</div>
-            <div class="hero-card-stats-label">New Patients This Month</div>
-          </div>
-          <span class="arrow-up" aria-hidden="true">↑</span>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     PROBLEM
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-problem" id="services">
-  <div class="container">
-    
-    <div class="section-header reveal">
-      <span class="section-label">The Problem</span>
-      <h2 class="section-headline">
-        Most Dental Websites Are Silently Losing You Patients
-      </h2>
-      <p class="section-subtext">
-        Your website is your most important salesperson. If it is not converting, you are handing patients to your competitors every single day.
-      </p>
-    </div>
-
-    <div class="problem-cards">
-      
-      <div class="problem-card reveal reveal-delay-1">
-        <div class="problem-card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-        </div>
-        <h3>Slow Loading</h3>
-        <p>70% of visitors leave if your site takes longer than 3 seconds to load. Every second costs you patients.</p>
-      </div>
-
-      <div class="problem-card reveal reveal-delay-2">
-        <div class="problem-card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-          </svg>
-        </div>
-        <h3>No Instant Response</h3>
-        <p>Patients book the first clinic that replies to their enquiry. If you are not responding instantly, you are losing.</p>
-      </div>
-
-      <div class="problem-card reveal reveal-delay-3">
-        <div class="problem-card-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-            <line x1="12" y1="18" x2="12.01" y2="18"/>
-          </svg>
-        </div>
-        <h3>Not Mobile Optimised</h3>
-        <p>80% of dental searches happen on a mobile device. A poor mobile experience means lost patients.</p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     SOLUTION
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-solution">
-  <div class="container">
-    
-    <div class="section-header reveal">
-      <span class="section-label">The Solution</span>
-      <h2 class="section-headline">We Build More Than a Website</h2>
-      <p class="section-subtext">
-        A complete patient acquisition system built to attract, convert, and retain more patients — on autopilot.
-      </p>
-    </div>
-
-    <div class="solution-features">
-      
-      <div class="solution-feature reveal reveal-delay-1">
-        <div class="solution-feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-          </svg>
-        </div>
-        <h3>Lightning Fast Website</h3>
-        <p>Loads in under 1 second. Built to convert, not just look good. Every millisecond saved is a patient kept.</p>
-      </div>
-
-      <div class="solution-feature reveal reveal-delay-2">
-        <div class="solution-feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-          </svg>
-        </div>
-        <h3>AI Booking System</h3>
-        <p>Responds to every patient enquiry instantly. Works 24/7. Never miss a lead again, even at 2am on a Sunday.</p>
-      </div>
-
-      <div class="solution-feature reveal reveal-delay-3">
-        <div class="solution-feature-icon" aria-hidden="true">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-          </svg>
-        </div>
-        <h3>Patient Journey Optimised</h3>
-        <p>Every element designed to lead visitors to book an appointment. Conversion psychology built in by default.</p>
-      </div>
-
-    </div>
-
-    <div class="pagespeed-wrap reveal">
-      <div class="pagespeed-ring-wrap" role="img" aria-label="Google PageSpeed Score: 97 out of 100">
-        <svg width="160" height="160" viewBox="0 0 160 160">
-          <circle class="pagespeed-ring-bg" cx="80" cy="80" r="70" fill="none" stroke-width="8"/>
-          <circle class="pagespeed-ring-fill" cx="80" cy="80" r="70" fill="none" stroke-width="8"/>
-        </svg>
-        <div class="pagespeed-score-text">
-          <span class="pagespeed-score-number">97</span>
-          <span class="pagespeed-score-sub">/100</span>
-        </div>
-      </div>
-      <span class="pagespeed-label">Google PageSpeed Score</span>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     LIVE DEMO
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-demo" id="demo">
-  <div class="container">
-    
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">Live Demo</span>
-      <h2 class="section-headline">See It In Action</h2>
-      <p class="section-subtext">
-        This is what your new patient acquisition system looks like. Try it — submit the form and see what your patients experience.
-      </p>
-    </div>
-
-    <div class="demo-toggle-wrap reveal">
-      <button class="demo-toggle-btn active" id="toggleDesktop" aria-pressed="true">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <rect x="2" y="3" width="20" height="14" rx="2"/>
-          <line x1="8" y1="21" x2="16" y2="21"/>
-          <line x1="12" y1="17" x2="12" y2="21"/>
-        </svg>
-        Desktop View
-      </button>
-      <button class="demo-toggle-btn" id="toggleMobile" aria-pressed="false">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <rect x="5" y="2" width="14" height="20" rx="2"/>
-        </svg>
-        Mobile View
-      </button>
-    </div>
-
-    <div class="browser-mockup-wrap">
-      <div class="browser-mockup">
-        
-        <div class="browser-chrome" aria-hidden="true">
-          <div class="browser-dots">
-            <span class="browser-dot red"></span>
-            <span class="browser-dot yellow"></span>
-            <span class="browser-dot green"></span>
-          </div>
-          <div class="browser-url">smiledentalcare.co.uk</div>
-        </div>
-
-        <div class="browser-content">
-          <div class="demo-clinic-name">Smile Dental Care</div>
-          <div class="demo-clinic-tagline">Where Smiles Begin · Harley Street, London</div>
-
-          <div class="demo-form-wrap">
-            
-            <form class="demo-form" id="demoForm" novalidate>
-              <label for="demoName" class="demo-form-label">Your Name</label>
-              <input type="text" id="demoName" name="name" placeholder="Dr. Sarah Johnson" required autocomplete="name" class="demo-form-input">
-
-              <label for="demoPhone" class="demo-form-label">Phone Number</label>
-              <input type="tel" id="demoPhone" name="phone" placeholder="020 7946 0123" autocomplete="tel" class="demo-form-input">
-
-              <div class="demo-form-checkbox-wrap">
-                <input type="checkbox" id="demoConsent" name="consent" class="demo-form-checkbox" required>
-                <label for="demoConsent" class="demo-form-checkbox-label">
-                  I agree to be contacted regarding my booking enquiry.
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-demo">
-                Book My Free Consultation
-              </button>
-
-              <p class="demo-form-gdpr">
-                Your data is stored securely. View our <a href="privacy-policy.html">Privacy Policy</a>.
-              </p>
-            </form>
-
-            <div class="demo-success" id="demoSuccess" aria-live="polite">
-              <div class="demo-success-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="20 6 9 17 4 12"/>
-                </svg>
-              </div>
-              <h3>Thanks <span class="demo-success-name">there</span>!</h3>
-              <p>We will call you within 15 minutes. Our team is ready to help you get more patients.</p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     STATS
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-stats" id="results">
-  <div class="container">
-    <div class="stats-grid">
-      
-      <div class="stat-item reveal">
-        <div class="stat-number" data-count="2.3" data-suffix="x">2.3x</div>
-        <div class="stat-label">Average increase in patient enquiries</div>
-      </div>
-
-      <div class="stat-item reveal reveal-delay-1">
-        <div class="stat-number">&lt; 1s</div>
-        <div class="stat-label">Website load time</div>
-      </div>
-
-      <div class="stat-item reveal reveal-delay-2">
-        <div class="stat-number" data-count="97" data-suffix="/100">97/100</div>
-        <div class="stat-label">Google PageSpeed score</div>
-      </div>
-
-      <div class="stat-item reveal reveal-delay-3">
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">AI booking system uptime</div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     HOW IT WORKS
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-how" id="how-it-works">
-  <div class="container">
-    
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">The Process</span>
-      <h2 class="section-headline">Up and Running in 7 Days</h2>
-      <p class="section-subtext">
-        No lengthy agency process. No waiting months. Your new patient acquisition system is live in one week.
-      </p>
-    </div>
-
-    <div class="steps-wrap">
-      <div class="steps-line" aria-hidden="true"></div>
-      
-      <div class="steps-grid">
-        
-        <div class="step-item reveal reveal-delay-1">
-          <div class="step-circle" aria-hidden="true">
-            <span class="step-number">01</span>
-          </div>
-          <div class="step-content">
-            <h3 class="step-title">Free Audit</h3>
-            <p class="step-text">We review your current website and show you exactly what is costing you patients. No obligation, just honest feedback.</p>
-          </div>
-        </div>
-
-        <div class="step-item reveal reveal-delay-2">
-          <div class="step-circle" aria-hidden="true">
-            <span class="step-number">02</span>
-          </div>
-          <div class="step-content">
-            <h3 class="step-title">We Build</h3>
-            <p class="step-text">Your full patient acquisition system — website, AI booking, and automated follow-up — is live within 7 days.</p>
-          </div>
-        </div>
-
-        <div class="step-item reveal reveal-delay-3">
-          <div class="step-circle" aria-hidden="true">
-            <span class="step-number">03</span>
-          </div>
-          <div class="step-content">
-            <h3 class="step-title">Patients Come In</h3>
-            <p class="step-text">Your enquiry inbox fills up. Your calendar gets booked. You focus on dentistry, we handle the growth.</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     SMILE TRANSFORMATIONS — Drag Slider Gallery
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-transformations" id="results">
-  <div class="container">
-
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">Gallery</span>
-      <h2 class="section-headline">Smile Transformations</h2>
-      <p class="section-subtext">
-        Real patients. Real results. Drag the slider to reveal the transformation.
-      </p>
-    </div>
-
-    <div class="tg-grid">
-
-      <!-- Card 1: Orthodontic Treatment -->
-      <div class="tg-card reveal reveal-delay-1">
-        <div class="tg-slider" data-tg-slider>
-          <div class="tg-before" style="background-image:url('images/implants_before.png')"></div>
-          <div class="tg-after"  style="background-image:url('images/implants_after.png')"></div>
-          <div class="tg-divider">
-            <div class="tg-handle" aria-label="Drag to compare">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-            </div>
-          </div>
-          <span class="tg-label tg-label-before">Before</span>
-          <span class="tg-label tg-label-after">After</span>
-        </div>
-        <div class="tg-info">
-          <h3 class="tg-title">Orthodontic Treatment</h3>
-          <p class="tg-desc">Complete orthodontic correction that transformed crooked teeth into a perfectly aligned, beautiful smile.</p>
-          <div class="tg-tags">
-            <span class="tg-tag">Orthodontic Alignment</span>
-            <span class="tg-tag">Cosmetic Dentistry</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2: Cosmetic Dentistry -->
-      <div class="tg-card reveal reveal-delay-2">
-        <div class="tg-slider" data-tg-slider>
-          <div class="tg-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
-          <div class="tg-after"  style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
-          <div class="tg-divider">
-            <div class="tg-handle" aria-label="Drag to compare">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-            </div>
-          </div>
-          <span class="tg-label tg-label-before">Before</span>
-          <span class="tg-label tg-label-after">After</span>
-        </div>
-        <div class="tg-info">
-          <h3 class="tg-title">Cosmetic Dentistry</h3>
-          <p class="tg-desc">A transformative cosmetic treatment using custom-designed veneers to enhance tooth shape, close gaps, and create a naturally brighter, more confident smile.</p>
-          <div class="tg-tags">
-            <span class="tg-tag">Custom Veneers</span>
-            <span class="tg-tag">Smile Enhancement</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Dental Implant Restoration -->
-      <div class="tg-card reveal reveal-delay-3">
-        <div class="tg-slider" data-tg-slider>
-          <div class="tg-before" style="background-image:url('images/veneers_before.png')"></div>
-          <div class="tg-after"  style="background-image:url('images/veneers_after.png')"></div>
-          <div class="tg-divider">
-            <div class="tg-handle" aria-label="Drag to compare">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-            </div>
-          </div>
-          <span class="tg-label tg-label-before">Before</span>
-          <span class="tg-label tg-label-after">After</span>
-        </div>
-        <div class="tg-info">
-          <h3 class="tg-title">Dental Implant Restoration</h3>
-          <p class="tg-desc">Dental implant placement that replaced a missing tooth with a natural-looking, permanent solution.</p>
-          <div class="tg-tags">
-            <span class="tg-tag">Dental Implant</span>
-            <span class="tg-tag">Orthodontic Alignment</span>
-            <span class="tg-tag">Custom Veneers</span>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /.tg-grid -->
-
-    <!-- Story-Style Sliding Cards -->
-
-
-    <!-- Story-Style Sliding Cards -->
-    <div class="st-container reveal">
-      <div class="st-track" id="stTrack">
-
-        <!-- Card 1: Subtle Touch -->
-        <div class="st-card">
-          <div class="st-header">
-            <span>Subtle Touch.</span>
-            <h3>Big Difference</h3>
-          </div>
-          <div class="st-visual">
-            <div class="st-img-split">
-              <div class="st-before" style="background-image:url('images/invisalign_before.png')"></div>
-              <div class="st-after" style="background-image:url('images/invisalign_after.png')"></div>
-            </div>
-            <div class="st-logo">
-              <!-- Premium Tooth-M Logo -->
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
-                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
-              </svg>
-            </div>
-            <div class="st-side-labels">
-              <span class="st-label-v">BEFORE</span>
-              <span class="st-label-v">AFTER</span>
-            </div>
-          </div>
-          <div class="st-footer">
-            <div class="st-clinic-info">
-              AM dental Clinic
-              <span>Dr. Amr Mansy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2: Trusted Technique -->
-        <div class="st-card">
-          <div class="st-header">
-            <span>Trusted technique.</span>
-            <h3>Honest results.</h3>
-          </div>
-          <div class="st-visual">
-            <div class="st-img-split">
-              <div class="st-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
-              <div class="st-after" style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
-            </div>
-            <div class="st-logo">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
-                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
-              </svg>
-            </div>
-            <div class="st-side-labels">
-              <span class="st-label-v">BEFORE</span>
-              <span class="st-label-v">AFTER</span>
-            </div>
-          </div>
-          <div class="st-footer">
-            <div class="st-clinic-info">
-              AM dental Clinic
-              <span>Dr. Amr Mansy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3: Real Change -->
-        <div class="st-card">
-          <div class="st-header">
-            <span>Tailored smile.</span>
-            <h3>Real change</h3>
-          </div>
-          <div class="st-visual">
-            <div class="st-img-split">
-              <div class="st-before" style="background-image:url('images/implants_before.png')"></div>
-              <div class="st-after" style="background-image:url('images/implants_after.png')"></div>
-            </div>
-            <div class="st-logo">
-              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
-                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
-              </svg>
-            </div>
-            <div class="st-side-labels">
-              <span class="st-label-v">BEFORE</span>
-              <span class="st-label-v">AFTER</span>
-            </div>
-          </div>
-          <div class="st-footer">
-            <div class="st-clinic-info">
-              AM dental Clinic
-              <span>Dr. Amr Mansy</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <script>
-      // Infinite Auto-slide for Story Slider
-      const track = document.getElementById('stTrack');
-      if (track) {
-        const cards = Array.from(track.children);
-        // Clone cards to create seamless loop
-        cards.forEach(card => {
-          const clone = card.cloneNode(true);
-          track.appendChild(clone);
-        });
-      }
-    </script>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     TESTIMONIALS
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-testimonials">
-  <div class="container">
-    
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">Social Proof</span>
-      <h2 class="section-headline">What Our Patients Say</h2>
-    </div>
-
-    <div class="testimonials-grid">
-      
-      <article class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-quote">
-          We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.
-        </blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">
-            <img src="images/dr-avatar-1.webp" alt="Dr. Patel" width="48" height="48" loading="lazy">
-          </div>
-          <div class="testimonial-author-info">
-            <h4>Dr. Patel</h4>
-            <span>SmileCare London</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-quote">
-          The AI booking system means we never miss an enquiry again. Worth every penny.
-        </blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">
-            <img src="images/dr-avatar-2.webp" alt="Dr. Ahmed" width="48" height="48" loading="lazy">
-          </div>
-          <div class="testimonial-author-info">
-            <h4>Dr. Ahmed</h4>
-            <span>Bright Smile Clinic</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-card reveal reveal-delay-3">
-        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-quote">
-          Our website now looks as premium as our clinic. Patients comment on it.
-        </blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar" aria-hidden="true">
-            <img src="images/dr-avatar-3.webp" alt="Dr. Williams" width="48" height="48" loading="lazy">
-          </div>
-          <div class="testimonial-author-info">
-            <h4>Dr. Williams</h4>
-            <span>Pure Dental</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-
-    <!-- Mobile Carousel -->
-    <div class="testimonials-carousel" id="testimonialsCarousel">
-      <div class="carousel-inner">
-        
-        <div class="carousel-slide">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial-quote">We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar"><img src="images/dr-avatar-1.webp" alt="Dr. Patel" width="48" height="48" loading="lazy"></div>
-              <div class="testimonial-author-info"><h4>Dr. Patel</h4><span>SmileCare London</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="carousel-slide">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial-quote">The AI booking system means we never miss an enquiry again. Worth every penny.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar"><img src="images/dr-avatar-2.webp" alt="Dr. Ahmed" width="48" height="48" loading="lazy"></div>
-              <div class="testimonial-author-info"><h4>Dr. Ahmed</h4><span>Bright Smile Clinic</span></div>
-            </div>
-          </article>
-        </div>
-
-        <div class="carousel-slide">
-          <article class="testimonial-card">
-            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote class="testimonial-quote">Our website now looks as premium as our clinic. Patients comment on it.</blockquote>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar"><img src="images/dr-avatar-3.webp" alt="Dr. Williams" width="48" height="48" loading="lazy"></div>
-              <div class="testimonial-author-info"><h4>Dr. Williams</h4><span>Pure Dental</span></div>
-            </div>
-          </article>
-        </div>
-
-      </div>
-      <div class="carousel-dots">
-        <button class="carousel-dot active" aria-label="Slide 1"></button>
-        <button class="carousel-dot" aria-label="Slide 2"></button>
-        <button class="carousel-dot" aria-label="Slide 3"></button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     PRICING
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-pricing" id="pricing">
-  <div class="container">
-    
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">Investment</span>
-      <h2 class="section-headline">Simple, Transparent Pricing</h2>
-      <p class="section-subtext">
-        No hidden fees. No lock-in contracts. Just a system that pays for itself in the first month.
-      </p>
-    </div>
-
-    <div class="pricing-grid">
-      
-      <div class="pricing-card reveal reveal-delay-1">
-        <div class="pricing-title">Starter</div>
-        <div class="pricing-amount">
-          <span class="pricing-currency">£</span>
-          <span class="pricing-number">600</span>
-        </div>
-        <div class="pricing-period">one-time payment</div>
-        <ul class="pricing-features">
-          <li>High-converting website</li>
-          <li>Mobile optimised</li>
-          <li>97+ Google PageSpeed score</li>
-          <li>GDC &amp; GDPR compliant</li>
-          <li>1 revision round</li>
-          <li>Deployed to your domain</li>
-        </ul>
-        <a href="#audit" class="btn btn-secondary btn-pricing">Get Started</a>
-      </div>
-
-      <div class="pricing-card featured reveal reveal-delay-2">
-        <div class="pricing-badge">Most Popular</div>
-        <div class="pricing-title">Growth</div>
-        <div class="pricing-amount">
-          <span class="pricing-currency">£</span>
-          <span class="pricing-number">1,000</span>
-        </div>
-        <div class="pricing-period">setup + £800/month</div>
-        <ul class="pricing-features">
-          <li>Everything in Starter</li>
-          <li>AI booking system</li>
-          <li>Automated patient follow-up</li>
-          <li>Monthly performance report</li>
-          <li>Unlimited enquiry handling</li>
-          <li>Priority support</li>
-        </ul>
-        <a href="#audit" class="btn btn-primary btn-pricing">Get Started</a>
-      </div>
-
-    </div>
-
-    <p class="pricing-footer reveal">
-      Prefer to pay per result? Ask us about our <strong>£10 per confirmed booking</strong> model.
-    </p>
-
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     AUDIT CTA
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-audit" id="audit">
-  <div class="container">
-    <div class="audit-layout">
-      
-      <div class="audit-text">
-        <span class="section-label reveal">Free Audit</span>
-        <h2 class="section-headline reveal audit-headline">
-          Find Out Exactly Why Your Website Is Losing Patients
-        </h2>
-        <p class="audit-subtext reveal">
-          Free 10-minute audit. No obligation. No sales pressure. Just honest feedback.
-        </p>
-      </div>
-
-      <div class="audit-form-wrap">
-        
-        <form class="audit-form" id="auditForm" name="audit-form" method="POST" netlify netlify-honeypot="bot-field" novalidate>
-          <input type="hidden" name="form-name" value="audit-form">
-          <div class="visually-hidden">
-            <label>Do not fill this out: <input name="bot-field"></label>
-          </div>
-
-          <div class="form-row">
-            <div class="form-field">
-              <label class="form-label" for="clinicName">Clinic Name</label>
-              <input class="form-input" type="text" id="clinicName" name="clinic-name" placeholder="Smile Dental Care" required autocomplete="organization">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="ownerName">Owner Name</label>
-              <input class="form-input" type="text" id="ownerName" name="owner-name" placeholder="Dr. Jane Smith" required autocomplete="name">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-field">
-              <label class="form-label" for="auditPhone">Phone Number</label>
-              <input class="form-input" type="tel" id="auditPhone" name="phone" placeholder="020 7946 0123" required autocomplete="tel">
-            </div>
-            <div class="form-field">
-              <label class="form-label" for="auditEmail">Email Address</label>
-              <input class="form-input" type="email" id="auditEmail" name="email" placeholder="hello@clinic.co.uk" required autocomplete="email">
-            </div>
-          </div>
-
-          <div class="form-checkbox-wrap">
-            <input type="checkbox" id="gdprConsent" name="gdpr-consent" class="form-checkbox" required>
-            <label for="gdprConsent" class="form-checkbox-label">
-              I agree to be contacted regarding my audit request.
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-audit">
-            Claim My Free Audit
-          </button>
-
-          <p class="form-gdpr">
-            Your details are stored securely and never shared. See our <a href="privacy-policy.html">Privacy Policy</a>.
-          </p>
-        </form>
-
-        <div class="audit-success" id="auditSuccess" aria-live="polite">
-          <div class="audit-success-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <h3>Thank you.</h3>
-          <p>We will review your website and call you within 24 hours.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════════
-     FAQ
-     ══════════════════════════════════════════════════════════ -->
-<section class="section-faq" id="faq">
-  <div class="container">
-    <div class="section-header section-header-center reveal">
-      <span class="section-label">Questions</span>
-      <h2 class="section-headline">Common Questions</h2>
-      <p class="section-subtext">Everything you need to know about our patient acquisition systems.</p>
-    </div>
-
-    <div class="faq-grid reveal">
-      <div class="faq-item">
-        <h3>How long does it take to see results?</h3>
-        <p>Most clinics see their first new patient enquiry within 24 hours of going live. Significant growth usually happens within the first 30 days as the system gathers data.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Will this work with my current dental software?</h3>
-        <p>Yes. Our AI booking system can integrate with most major dental practice management software or work as a standalone high-performance lead generator.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Do I own the website after I pay?</h3>
-        <p>Absolutely. Unlike many agencies that "rent" you a site, you own your Double Paradigm system 100%. We can even host it for you for free on our global edge network.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is the AI booking system safe?</h3>
-        <p>Yes. It is fully GDPR compliant and designed specifically for clinical environments. It handles basic sorting and booking, but always leaves medical advice to your clinicians.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<!-- ══════════════════════════════════════════════════════════
-     FOOTER
-     ══════════════════════════════════════════════════════════ -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-
-      <!-- Brand Column -->
-      <div class="footer-brand">
-        <div class="footer-brand-logo">
-          <div class="footer-logo-box" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-              <path d="M7 10s1 1 5 1 5-1 5-1"/>
-            </svg>
-          </div>
-          <div>
-            <div class="footer-brand-name">Smile Dental Care</div>
-            <div class="footer-brand-tagline">Clinical Excellence · Luxury Care</div>
-          </div>
-        </div>
-        <p class="footer-brand-desc">
-          Providing exceptional dental care with advanced technology and compassionate service. Transforming smiles and lives across London.
-        </p>
-        <div class="footer-social">
-          <a href="https://instagram.com" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
-          </a>
-          <a href="https://facebook.com" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-            </svg>
-          </a>
-          <a href="tel:+442079460123" class="footer-social-link" aria-label="Call us">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#results">Results</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#audit">Free Audit</a></li>
-          <li><a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;">Book Now</a></li>
-        </ul>
-      </div>
-
-      <!-- Our Services -->
-      <div class="footer-col">
-        <h3>Our Services</h3>
-        <ul>
-          <li><span>General Dentistry</span></li>
-          <li><span>Cosmetic Dentistry</span></li>
-          <li><span>Dental Implants</span></li>
-          <li><span>Orthodontics</span></li>
-          <li><span>Teeth Whitening</span></li>
-          <li><span>Porcelain Veneers</span></li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="footer-col">
-        <h3>Contact Info</h3>
-        <ul class="footer-contact-list">
-          <li>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
-              </svg>
-              <div>
-                <a href="tel:+442079460123">020 7946 0123</a>
-                <span class="footer-contact-sub">WhatsApp Available</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-              </svg>
-              <div>
-                <span>Mon–Fri: 8am – 7pm</span>
-                <span class="footer-contact-sub">Sat: 9am – 5pm</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-              <div>
-                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">View Location on Map</a>
-                <span class="footer-contact-sub">Harley Street, London, UK</span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-    </div><!-- /.footer-grid -->
-
-    <!-- Footer Bottom Bar -->
-    <div class="footer-bottom">
-      <div class="footer-bottom-logo">
-        <div class="footer-logo-box footer-logo-box--sm" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-            <path d="M7 10s1 1 5 1 5-1 5-1"/>
-          </svg>
-        </div>
-        <span>Smile Dental Care</span>
-      </div>
-      <div class="footer-bottom-copy">
-        © 2026 Smile Dental Care. All rights reserved. |
-        <a href="privacy-policy.html">Privacy</a> ·
-        <a href="cookie-policy.html">Cookies</a> ·
-        <a href="complaints.html">Complaints</a>
-      </div>
-      <button class="footer-back-top" id="backToTop" aria-label="Back to top">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="18 15 12 9 6 15"/>
-        </svg>
-      </button>
-    </div>
-
-  </div>
-</footer>
-
-<!-- Mobile CTA Bar -->
-<div class="mobile-cta-bar">
-  <a href="tel:+442079460123" aria-label="Call: 020 7946 0123">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
-    </svg>
-    Call Now — 020 7946 0123
-  </a>
-</div>
-
-<!-- Scripts -->
-<script src="config.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script type="module" src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
-<script defer src="script.js"></script>
-
-<!-- Netlify Form Detection -->
-<form name="audit-form" netlify netlify-honeypot="bot-field" hidden>
-  <input type="text" name="clinic-name">
-  <input type="text" name="owner-name">
-  <input type="tel" name="phone">
-  <input type="email" name="email">
-  <input type="checkbox" name="gdpr-consent">
-  <input name="bot-field">
-</form>
-
-
-<!-- Floating Widgets -->
-<div class="floating-widgets" id="smileChatbot">
-  <a id="whatsappFloatBtn" href="#" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.119.554 4.188 1.605 6.046L0 24l6.104-1.602a11.803 11.803 0 005.94 1.605h.005c6.635 0 12.03-5.393 12.035-12.03a11.797 11.797 0 00-3.447-8.411z"/>
-    </svg>
-  </a>
-  <div class="float-btn float-chatbot" id="chatbotFab" aria-label="Open AI Assistant">
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-    </svg>
-    <span class="float-badge">1</span>
-  </div>
-
-  <div class="chatbot-window" id="chatbotWindow">
-    <div class="chatbot-header">
-      <div class="chatbot-header-info">
-        <div class="chatbot-avatar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-            <path d="M7 10s1 1 5 1 5-1 5-1"/>
-          </svg>
-        </div>
-        <div>
-          <div class="chatbot-name">Smile AI Assistant</div>
-          <div class="chatbot-status">
-            <span class="status-dot"></span>
-            Online · Instant Response
-          </div>
-        </div>
-      </div>
-      <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-    </div>
-    
-    <div class="chatbot-quick-actions">
-      <button class="chat-pill">🦷 Services</button>
-      <button class="chat-pill">💰 Pricing</button>
-      <button class="chat-pill">🚀 Get Started</button>
-      <button class="chat-pill">📈 Results</button>
-    </div>
-
-    <div class="chatbot-messages" id="chatbotMessages">
-      <div class="message-row">
-        <div class="message-avatar">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
-            <path d="M7 10s1 1 5 1 5-1 5-1"/>
-          </svg>
-        </div>
-        <div class="message assistant">
-          <div class="message-content">
-            Hello! 👋 I'm your Smile AI Assistant.
-            <br><br>
-            Whether you're curious about our <strong>services</strong>, <strong>pricing</strong>, or want to see some <strong>real client results</strong> — just ask. I'm here 24/7 to help you achieve your perfect smile today!
-          </div>
-          <div class="message-time">14:13</div>
-        </div>
-      </div>
-    </div>
-
-    <form class="chatbot-input-wrap" id="chatbotForm">
-      <textarea id="chatbotInput" placeholder="Ask me anything..." rows="1" required></textarea>
-      <button type="submit" class="chatbot-send" id="chatbotSend" aria-label="Send Message">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </button>
-    </form>
-    <div class="chatbot-footer">Powered by Smile AI</div>
-  </div>
-</div>
-
-
-<!-- Cookie Consent -->
-<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle">
-  <div class="cookie-content">
-    <h3 id="cookieTitle">Privacy Preference</h3>
-    <p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies as described in our <a href="cookie-policy.html">Cookie Policy</a>.</p>
-    <div class="cookie-btns">
-      <button class="btn btn-secondary" id="cookieDecline">Decline All</button>
-      <button class="btn btn-primary" id="cookieAccept">Accept All</button>
-    </div>
-  </div>
-</div>
-
-<!-- Offline Game Overlay -->
-<div id="offlineGame">
-  <h2 class="game-title">Oops! You are Offline</h2>
-  <p class="game-sub">While you wait for your connection, help the tooth jump over the sweets!</p>
-  <canvas id="gameCanvas" width="600" height="250"></canvas>
-  <p style="margin-top: 20px; font-weight: 600;">Press SPACE to Jump</p>
-</div>
-
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smile Dental Care — Premium Cosmetic & General Dentistry in London. Experience world-class dental care in a luxury clinical environment.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Smile Dental Care — Clinical Excellence · Luxury Care">
+  <meta property="og:description" content="Experience world-class dental care in a luxury clinical environment. Specializing in Invisalign, dental implants, and cosmetic smile makeovers.">
+  <meta property="og:type" content="website">
+  <title>Smile Dental Care — Clinical Excellence · Luxury Care</title>
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optimized Font Loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <style>
+    :root {
+      --color-bg: #F8F7F4;
+      --color-primary: #1B3A5C;
+      --color-accent: #C4A882;
+      --color-text-primary: #1A1A1A;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "DM Sans", system-ui, sans-serif;
+      --space-xl: 80px;
+    }
+    body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text-primary); margin: 0; -webkit-font-smoothing: antialiased; }
+    .navbar { display: flex; align-items: center; justify-content: space-between; padding: 28px clamp(16px, 5vw, 96px); position: absolute; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(248, 247, 244, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .hero { padding-top: 140px; padding-bottom: var(--space-xl); overflow: hidden; }
+    .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 60px; align-items: center; }
+    .hero-headline { font-family: var(--font-display); font-size: clamp(32px, 8vw, 92px); line-height: 1.05; color: #fff; margin-bottom: 24px; font-weight: 600; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 clamp(16px, 5vw, 96px); }
+    .btn { display: inline-flex; align-items: center; justify-content: center; padding: 16px 32px; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: all 0.3s ease; cursor: pointer; }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    @media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; text-align: center; } .navbar { padding: 20px 20px; } }
+  </style>
+  <!-- Calendly link widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css?v=2">
+  <!-- CookieYes Consent (Add valid script URL here in production) -->
+</head>
+<body>
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+     ══════════════════════════════════════════════════════════ -->
+<header>
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <a href="/" class="nav-logo" aria-label="Smile Dental Care Home">
+      <div class="nav-logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+          <path d="M7 10s1 1 5 1 5-1 5-1"/>
+        </svg>
+      </div>
+      <div>
+        <div class="nav-logo-name">Smile Dental Care</div>
+        <div class="nav-logo-tagline">Clinical Excellence · Luxury Care</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-nav">Book Appointment</a>
+      <a href="#audit" class="btn btn-secondary btn-nav" style="margin-right: 15px;">Free Audit</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="#services">Services</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#results">Results</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#audit" class="btn btn-primary">Get Free Audit</a>
+  </nav>
+</header>
+<main>
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+     ══════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          Premium Cosmetic & General Dentistry
+        </div>
+        <h1 class="hero-headline">
+          The Smile You Have Always Dreamed Of
+        </h1>
+        <p class="hero-sub">
+          Experience world-class dental care in a luxury clinical environment. Our expert team specializes in Invisalign, dental implants, and cosmetic smile makeovers.
+        </p>
+        <div class="hero-ctas">
+          <a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;" class="btn btn-primary btn-hero">
+            Book via Calendly
+          </a>
+          <a href="#results" class="btn btn-secondary btn-hero">View Transformations</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-notification">
+          <div class="hero-card-notification-icon" aria-hidden="true">👤</div>
+          <div class="hero-card-notification-text">
+            <div class="hero-card-notification-title">Sarah M. just requested an appointment</div>
+            <div class="hero-card-notification-time">
+              <span class="green-dot" aria-hidden="true"></span>
+              2 mins ago
+            </div>
+          </div>
+        </div>
+        <div class="hero-card hero-card-rating">
+          <div class="hero-card-stars" role="img" aria-label="4.9 out of 5 stars">★★★★★</div>
+          <div class="hero-card-rating-number">4.9</div>
+          <div class="hero-card-rating-label">128 Google Reviews</div>
+        </div>
+        <div class="hero-card hero-card-stats">
+          <div>
+            <div class="hero-card-stats-number">38</div>
+            <div class="hero-card-stats-label">New Patients This Month</div>
+          </div>
+          <span class="arrow-up" aria-hidden="true">↑</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     PROBLEM
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-problem" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">The Problem</span>
+      <h2 class="section-headline">
+        Most Dental Websites Are Silently Losing You Patients
+      </h2>
+      <p class="section-subtext">
+        Your website is your most important salesperson. If it is not converting, you are handing patients to your competitors every single day.
+      </p>
+    </div>
+    <div class="problem-cards">
+      <div class="problem-card reveal reveal-delay-1">
+        <div class="problem-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <h3>Slow Loading</h3>
+        <p>70% of visitors leave if your site takes longer than 3 seconds to load. Every second costs you patients.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-2">
+        <div class="problem-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>No Instant Response</h3>
+        <p>Patients book the first clinic that replies to their enquiry. If you are not responding instantly, you are losing.</p>
+      </div>
+      <div class="problem-card reveal reveal-delay-3">
+        <div class="problem-card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+            <line x1="12" y1="18" x2="12.01" y2="18"/>
+          </svg>
+        </div>
+        <h3>Not Mobile Optimised</h3>
+        <p>80% of dental searches happen on a mobile device. A poor mobile experience means lost patients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     SOLUTION
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-solution">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">The Solution</span>
+      <h2 class="section-headline">We Build More Than a Website</h2>
+      <p class="section-subtext">
+        A complete patient acquisition system built to attract, convert, and retain more patients — on autopilot.
+      </p>
+    </div>
+    <div class="solution-features">
+      <div class="solution-feature reveal reveal-delay-1">
+        <div class="solution-feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>Lightning Fast Website</h3>
+        <p>Loads in under 1 second. Built to convert, not just look good. Every millisecond saved is a patient kept.</p>
+      </div>
+      <div class="solution-feature reveal reveal-delay-2">
+        <div class="solution-feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <h3>AI Booking System</h3>
+        <p>Responds to every patient enquiry instantly. Works 24/7. Never miss a lead again, even at 2am on a Sunday.</p>
+      </div>
+      <div class="solution-feature reveal reveal-delay-3">
+        <div class="solution-feature-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>Patient Journey Optimised</h3>
+        <p>Every element designed to lead visitors to book an appointment. Conversion psychology built in by default.</p>
+      </div>
+    </div>
+    <div class="pagespeed-wrap reveal">
+      <div class="pagespeed-ring-wrap" role="img" aria-label="Google PageSpeed Score: 97 out of 100">
+        <svg width="160" height="160" viewBox="0 0 160 160">
+          <circle class="pagespeed-ring-bg" cx="80" cy="80" r="70" fill="none" stroke-width="8"/>
+          <circle class="pagespeed-ring-fill" cx="80" cy="80" r="70" fill="none" stroke-width="8"/>
+        </svg>
+        <div class="pagespeed-score-text">
+          <span class="pagespeed-score-number">97</span>
+          <span class="pagespeed-score-sub">/100</span>
+        </div>
+      </div>
+      <span class="pagespeed-label">Google PageSpeed Score</span>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     LIVE DEMO
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-demo" id="demo">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">Live Demo</span>
+      <h2 class="section-headline">See It In Action</h2>
+      <p class="section-subtext">
+        This is what your new patient acquisition system looks like. Try it — submit the form and see what your patients experience.
+      </p>
+    </div>
+    <div class="demo-toggle-wrap reveal">
+      <button class="demo-toggle-btn active" id="toggleDesktop" aria-pressed="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="3" width="20" height="14" rx="2"/>
+          <line x1="8" y1="21" x2="16" y2="21"/>
+          <line x1="12" y1="17" x2="12" y2="21"/>
+        </svg>
+        Desktop View
+      </button>
+      <button class="demo-toggle-btn" id="toggleMobile" aria-pressed="false">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="5" y="2" width="14" height="20" rx="2"/>
+        </svg>
+        Mobile View
+      </button>
+    </div>
+    <div class="browser-mockup-wrap">
+      <div class="browser-mockup">
+        <div class="browser-chrome" aria-hidden="true">
+          <div class="browser-dots">
+            <span class="browser-dot red"></span>
+            <span class="browser-dot yellow"></span>
+            <span class="browser-dot green"></span>
+          </div>
+          <div class="browser-url">smiledentalcare.co.uk</div>
+        </div>
+        <div class="browser-content">
+          <div class="demo-clinic-name">Smile Dental Care</div>
+          <div class="demo-clinic-tagline">Where Smiles Begin · Harley Street, London</div>
+          <div class="demo-form-wrap">
+            <form class="demo-form" id="demoForm" novalidate>
+              <label for="demoName" class="demo-form-label">Your Name</label>
+              <input type="text" id="demoName" name="name" placeholder="Dr. Sarah Johnson" required autocomplete="name" class="demo-form-input">
+              <label for="demoPhone" class="demo-form-label">Phone Number</label>
+              <input type="tel" id="demoPhone" name="phone" placeholder="020 7946 0123" autocomplete="tel" class="demo-form-input">
+              <div class="demo-form-checkbox-wrap">
+                <input type="checkbox" id="demoConsent" name="consent" class="demo-form-checkbox" required>
+                <label for="demoConsent" class="demo-form-checkbox-label">
+                  I agree to be contacted regarding my booking enquiry.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-demo">
+                Book My Free Consultation
+              </button>
+              <p class="demo-form-gdpr">
+                Your data is stored securely. View our <a href="privacy-policy.html">Privacy Policy</a>.
+              </p>
+            </form>
+            <div class="demo-success" id="demoSuccess" aria-live="polite">
+              <div class="demo-success-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              <h3>Thanks <span class="demo-success-name">there</span>!</h3>
+              <p>We will call you within 15 minutes. Our team is ready to help you get more patients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     STATS
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-stats" id="results">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="2.3" data-suffix="x">2.3x</div>
+        <div class="stat-label">Average increase in patient enquiries</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number">&lt; 1s</div>
+        <div class="stat-label">Website load time</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number" data-count="97" data-suffix="/100">97/100</div>
+        <div class="stat-label">Google PageSpeed score</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">AI booking system uptime</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     HOW IT WORKS
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-how" id="how-it-works">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">The Process</span>
+      <h2 class="section-headline">Up and Running in 7 Days</h2>
+      <p class="section-subtext">
+        No lengthy agency process. No waiting months. Your new patient acquisition system is live in one week.
+      </p>
+    </div>
+    <div class="steps-wrap">
+      <div class="steps-line" aria-hidden="true"></div>
+      <div class="steps-grid">
+        <div class="step-item reveal reveal-delay-1">
+          <div class="step-circle" aria-hidden="true">
+            <span class="step-number">01</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Free Audit</h3>
+            <p class="step-text">We review your current website and show you exactly what is costing you patients. No obligation, just honest feedback.</p>
+          </div>
+        </div>
+        <div class="step-item reveal reveal-delay-2">
+          <div class="step-circle" aria-hidden="true">
+            <span class="step-number">02</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">We Build</h3>
+            <p class="step-text">Your full patient acquisition system — website, AI booking, and automated follow-up — is live within 7 days.</p>
+          </div>
+        </div>
+        <div class="step-item reveal reveal-delay-3">
+          <div class="step-circle" aria-hidden="true">
+            <span class="step-number">03</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Patients Come In</h3>
+            <p class="step-text">Your enquiry inbox fills up. Your calendar gets booked. You focus on dentistry, we handle the growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     SMILE TRANSFORMATIONS — Drag Slider Gallery
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-transformations" id="results">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">Gallery</span>
+      <h2 class="section-headline">Smile Transformations</h2>
+      <p class="section-subtext">
+        Real patients. Real results. Drag the slider to reveal the transformation.
+      </p>
+    </div>
+    <div class="tg-grid">
+      <!-- Card 1: Orthodontic Treatment -->
+      <div class="tg-card reveal reveal-delay-1">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/implants_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/implants_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
+        </div>
+        <div class="tg-info">
+          <h3 class="tg-title">Orthodontic Treatment</h3>
+          <p class="tg-desc">Complete orthodontic correction that transformed crooked teeth into a perfectly aligned, beautiful smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Orthodontic Alignment</span>
+            <span class="tg-tag">Cosmetic Dentistry</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2: Cosmetic Dentistry -->
+      <div class="tg-card reveal reveal-delay-2">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
+          <div class="tg-after"  style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
+        </div>
+        <div class="tg-info">
+          <h3 class="tg-title">Cosmetic Dentistry</h3>
+          <p class="tg-desc">A transformative cosmetic treatment using custom-designed veneers to enhance tooth shape, close gaps, and create a naturally brighter, more confident smile.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Custom Veneers</span>
+            <span class="tg-tag">Smile Enhancement</span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: Dental Implant Restoration -->
+      <div class="tg-card reveal reveal-delay-3">
+        <div class="tg-slider" data-tg-slider>
+          <div class="tg-before" style="background-image:url('images/veneers_before.png')"></div>
+          <div class="tg-after"  style="background-image:url('images/veneers_after.png')"></div>
+          <div class="tg-divider">
+            <div class="tg-handle" aria-label="Drag to compare">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </div>
+          </div>
+          <span class="tg-label tg-label-before">Before</span>
+          <span class="tg-label tg-label-after">After</span>
+        </div>
+        <div class="tg-info">
+          <h3 class="tg-title">Dental Implant Restoration</h3>
+          <p class="tg-desc">Dental implant placement that replaced a missing tooth with a natural-looking, permanent solution.</p>
+          <div class="tg-tags">
+            <span class="tg-tag">Dental Implant</span>
+            <span class="tg-tag">Orthodontic Alignment</span>
+            <span class="tg-tag">Custom Veneers</span>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.tg-grid -->
+    <!-- Story-Style Sliding Cards -->
+    <!-- Story-Style Sliding Cards -->
+    <div class="st-container reveal">
+      <div class="st-track" id="stTrack">
+        <!-- Card 1: Subtle Touch -->
+        <div class="st-card">
+          <div class="st-header">
+            <span>Subtle Touch.</span>
+            <h3>Big Difference</h3>
+          </div>
+          <div class="st-visual">
+            <div class="st-img-split">
+              <div class="st-before" style="background-image:url('images/invisalign_before.png')"></div>
+              <div class="st-after" style="background-image:url('images/invisalign_after.png')"></div>
+            </div>
+            <div class="st-logo">
+              <!-- Premium Tooth-M Logo -->
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
+                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
+              </svg>
+            </div>
+            <div class="st-side-labels">
+              <span class="st-label-v">BEFORE</span>
+              <span class="st-label-v">AFTER</span>
+            </div>
+          </div>
+          <div class="st-footer">
+            <div class="st-clinic-info">
+              AM dental Clinic
+              <span>Dr. Amr Mansy</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: Trusted Technique -->
+        <div class="st-card">
+          <div class="st-header">
+            <span>Trusted technique.</span>
+            <h3>Honest results.</h3>
+          </div>
+          <div class="st-visual">
+            <div class="st-img-split">
+              <div class="st-before" style="background-image:url('images/dental_before_after_whitening_before.webp')"></div>
+              <div class="st-after" style="background-image:url('images/dental_before_after_whitening_after.webp')"></div>
+            </div>
+            <div class="st-logo">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
+                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
+              </svg>
+            </div>
+            <div class="st-side-labels">
+              <span class="st-label-v">BEFORE</span>
+              <span class="st-label-v">AFTER</span>
+            </div>
+          </div>
+          <div class="st-footer">
+            <div class="st-clinic-info">
+              AM dental Clinic
+              <span>Dr. Amr Mansy</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: Real Change -->
+        <div class="st-card">
+          <div class="st-header">
+            <span>Tailored smile.</span>
+            <h3>Real change</h3>
+          </div>
+          <div class="st-visual">
+            <div class="st-img-split">
+              <div class="st-before" style="background-image:url('images/implants_before.png')"></div>
+              <div class="st-after" style="background-image:url('images/implants_after.png')"></div>
+            </div>
+            <div class="st-logo">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 80 C 20 20, 45 20, 50 45 C 55 20, 80 20, 80 80" />
+                <path d="M35 85 Q 50 95, 65 85" opacity="0.4" />
+              </svg>
+            </div>
+            <div class="st-side-labels">
+              <span class="st-label-v">BEFORE</span>
+              <span class="st-label-v">AFTER</span>
+            </div>
+          </div>
+          <div class="st-footer">
+            <div class="st-clinic-info">
+              AM dental Clinic
+              <span>Dr. Amr Mansy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dot Indicators for Story Slider -->
+    <div class="st-dots" id="stDots"></div>
+    <script>
+      (function() {
+        const container = document.querySelector(".st-container");
+        const track = document.getElementById("stTrack");
+        const dotContainer = document.getElementById("stDots");
+        if (!track || !container) return;
+        const originalCards = Array.from(track.children);
+        const cardCount = originalCards.length;
+        originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
+        originalCards.forEach(card => track.appendChild(card.cloneNode(true)));
+        for (let i = 0; i < cardCount; i++) {
+          const dot = document.createElement("button");
+          dot.className = "st-dot" + (i === 0 ? " active" : "");
+          dot.setAttribute("aria-label", `Go to slide ${i + 1}`);
+          dot.addEventListener("click", () => goToSlide(i + cardCount));
+          dotContainer.appendChild(dot);
+        }
+        let currentIndex = cardCount;
+        let isDragging = false;
+        let startX, currentTranslate = 0;
+        let autoSlideInterval;
+        const getCardWidth = () => {
+          const card = track.querySelector(".st-card");
+          return card ? card.offsetWidth + 24 : 344;
+        };
+        function updatePosition() {
+          const width = getCardWidth();
+          track.style.transform = `translateX(${-currentIndex * width}px)`;
+          const activeDotIndex = currentIndex % cardCount;
+          document.querySelectorAll(".st-dot").forEach((dot, idx) => {
+            dot.classList.toggle("active", idx === activeDotIndex);
+          });
+        }
+        updatePosition();
+        function goToSlide(index, animated = true) {
+          if (!animated) track.style.transition = "none";
+          currentIndex = index;
+          updatePosition();
+          if (!animated) {
+            track.offsetHeight;
+            track.style.transition = "";
+          }
+        }
+        function nextSlide() {
+          currentIndex++;
+          track.style.transition = "transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+          updatePosition();
+          if (currentIndex >= cardCount * 2) {
+            setTimeout(() => { goToSlide(currentIndex - cardCount, false); }, 550);
+          }
+        }
+        function prevSlide() {
+          currentIndex--;
+          track.style.transition = "transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94)";
+          updatePosition();
+          if (currentIndex < cardCount) {
+            setTimeout(() => { goToSlide(currentIndex + cardCount, false); }, 550);
+          }
+        }
+        function startAutoSlide() {
+          stopAutoSlide();
+          autoSlideInterval = setInterval(nextSlide, 4000);
+        }
+        function stopAutoSlide() { clearInterval(autoSlideInterval); }
+        const startDrag = (e) => {
+          isDragging = true;
+          track.classList.add("is-dragging");
+          startX = (e.pageX || (e.touches && e.touches[0].pageX));
+          currentTranslate = -currentIndex * getCardWidth();
+          stopAutoSlide();
+        };
+        const moveDrag = (e) => {
+          if (!isDragging) return;
+          const x = (e.pageX || (e.touches && e.touches[0].pageX));
+          const walk = x - startX;
+          track.style.transform = `translateX(${currentTranslate + walk}px)`;
+        };
+        const endDrag = (e) => {
+          if (!isDragging) return;
+          isDragging = false;
+          track.classList.remove("is-dragging");
+          const x = (e.changedTouches ? e.changedTouches[0].pageX : (e.pageX || startX));
+          const walk = x - startX;
+          if (Math.abs(walk) > 50) {
+            if (walk > 0) prevSlide();
+            else nextSlide();
+          } else {
+            updatePosition();
+          }
+          startAutoSlide();
+        };
+        container.addEventListener("mousedown", startDrag);
+        container.addEventListener("mousemove", moveDrag);
+        window.addEventListener("mouseup", endDrag);
+        container.addEventListener("touchstart", startDrag, { passive: true });
+        container.addEventListener("touchmove", moveDrag, { passive: true });
+        container.addEventListener("touchend", endDrag);
+        startAutoSlide();
+        container.addEventListener("mouseenter", stopAutoSlide);
+        container.addEventListener("mouseleave", startAutoSlide);
+        window.addEventListener("resize", updatePosition);
+      })();
+    </script>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     TESTIMONIALS
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-testimonials">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">Social Proof</span>
+      <h2 class="section-headline">What Our Patients Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <article class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testimonial-quote">
+          We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <img src="images/dr-avatar-1.webp" alt="Dr. Patel" width="48" height="48" loading="lazy">
+          </div>
+          <div class="testimonial-author-info">
+            <h4>Dr. Patel</h4>
+            <span>SmileCare London</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testimonial-quote">
+          The AI booking system means we never miss an enquiry again. Worth every penny.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <img src="images/dr-avatar-2.webp" alt="Dr. Ahmed" width="48" height="48" loading="lazy">
+          </div>
+          <div class="testimonial-author-info">
+            <h4>Dr. Ahmed</h4>
+            <span>Bright Smile Clinic</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonial-card reveal reveal-delay-3">
+        <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="testimonial-quote">
+          Our website now looks as premium as our clinic. Patients comment on it.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar" aria-hidden="true">
+            <img src="images/dr-avatar-3.webp" alt="Dr. Williams" width="48" height="48" loading="lazy">
+          </div>
+          <div class="testimonial-author-info">
+            <h4>Dr. Williams</h4>
+            <span>Pure Dental</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- Mobile Carousel -->
+    <div class="testimonials-carousel" id="testimonialsCarousel">
+      <div class="carousel-inner">
+        <div class="carousel-slide">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">We went from 8 new patients a month to 31 in the first 6 weeks. Unbelievable.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="images/dr-avatar-1.webp" alt="Dr. Patel" width="48" height="48" loading="lazy"></div>
+              <div class="testimonial-author-info"><h4>Dr. Patel</h4><span>SmileCare London</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="carousel-slide">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">The AI booking system means we never miss an enquiry again. Worth every penny.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="images/dr-avatar-2.webp" alt="Dr. Ahmed" width="48" height="48" loading="lazy"></div>
+              <div class="testimonial-author-info"><h4>Dr. Ahmed</h4><span>Bright Smile Clinic</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="carousel-slide">
+          <article class="testimonial-card">
+            <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote class="testimonial-quote">Our website now looks as premium as our clinic. Patients comment on it.</blockquote>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar"><img src="images/dr-avatar-3.webp" alt="Dr. Williams" width="48" height="48" loading="lazy"></div>
+              <div class="testimonial-author-info"><h4>Dr. Williams</h4><span>Pure Dental</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="carousel-dots">
+        <button class="carousel-dot active" aria-label="Slide 1"></button>
+        <button class="carousel-dot" aria-label="Slide 2"></button>
+        <button class="carousel-dot" aria-label="Slide 3"></button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     PRICING
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-pricing" id="pricing">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">Investment</span>
+      <h2 class="section-headline">Simple, Transparent Pricing</h2>
+      <p class="section-subtext">
+        No hidden fees. No lock-in contracts. Just a system that pays for itself in the first month.
+      </p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card reveal reveal-delay-1">
+        <div class="pricing-title">Starter</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">£</span>
+          <span class="pricing-number">600</span>
+        </div>
+        <div class="pricing-period">one-time payment</div>
+        <ul class="pricing-features">
+          <li>High-converting website</li>
+          <li>Mobile optimised</li>
+          <li>97+ Google PageSpeed score</li>
+          <li>GDC &amp; GDPR compliant</li>
+          <li>1 revision round</li>
+          <li>Deployed to your domain</li>
+        </ul>
+        <a href="#audit" class="btn btn-secondary btn-pricing">Get Started</a>
+      </div>
+      <div class="pricing-card featured reveal reveal-delay-2">
+        <div class="pricing-badge">Most Popular</div>
+        <div class="pricing-title">Growth</div>
+        <div class="pricing-amount">
+          <span class="pricing-currency">£</span>
+          <span class="pricing-number">1,000</span>
+        </div>
+        <div class="pricing-period">setup + £800/month</div>
+        <ul class="pricing-features">
+          <li>Everything in Starter</li>
+          <li>AI booking system</li>
+          <li>Automated patient follow-up</li>
+          <li>Monthly performance report</li>
+          <li>Unlimited enquiry handling</li>
+          <li>Priority support</li>
+        </ul>
+        <a href="#audit" class="btn btn-primary btn-pricing">Get Started</a>
+      </div>
+    </div>
+    <p class="pricing-footer reveal">
+      Prefer to pay per result? Ask us about our <strong>£10 per confirmed booking</strong> model.
+    </p>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     AUDIT CTA
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-audit" id="audit">
+  <div class="container">
+    <div class="audit-layout">
+      <div class="audit-text">
+        <span class="section-label reveal">Free Audit</span>
+        <h2 class="section-headline reveal audit-headline">
+          Find Out Exactly Why Your Website Is Losing Patients
+        </h2>
+        <p class="audit-subtext reveal">
+          Free 10-minute audit. No obligation. No sales pressure. Just honest feedback.
+        </p>
+      </div>
+      <div class="audit-form-wrap">
+        <form class="audit-form" id="auditForm" name="audit-form" method="POST" netlify netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="audit-form">
+          <div class="visually-hidden">
+            <label>Do not fill this out: <input name="bot-field"></label>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="clinicName">Clinic Name</label>
+              <input class="form-input" type="text" id="clinicName" name="clinic-name" placeholder="Smile Dental Care" required autocomplete="organization">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="ownerName">Owner Name</label>
+              <input class="form-input" type="text" id="ownerName" name="owner-name" placeholder="Dr. Jane Smith" required autocomplete="name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label class="form-label" for="auditPhone">Phone Number</label>
+              <input class="form-input" type="tel" id="auditPhone" name="phone" placeholder="020 7946 0123" required autocomplete="tel">
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="auditEmail">Email Address</label>
+              <input class="form-input" type="email" id="auditEmail" name="email" placeholder="hello@clinic.co.uk" required autocomplete="email">
+            </div>
+          </div>
+          <div class="form-checkbox-wrap">
+            <input type="checkbox" id="gdprConsent" name="gdpr-consent" class="form-checkbox" required>
+            <label for="gdprConsent" class="form-checkbox-label">
+              I agree to be contacted regarding my audit request.
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-audit">
+            Claim My Free Audit
+          </button>
+          <p class="form-gdpr">
+            Your details are stored securely and never shared. See our <a href="privacy-policy.html">Privacy Policy</a>.
+          </p>
+        </form>
+        <div class="audit-success" id="auditSuccess" aria-live="polite">
+          <div class="audit-success-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <h3>Thank you.</h3>
+          <p>We will review your website and call you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════════════════════════════════════════
+     FAQ
+     ══════════════════════════════════════════════════════════ -->
+<section class="section-faq" id="faq">
+  <div class="container">
+    <div class="section-header section-header-center reveal">
+      <span class="section-label">Questions</span>
+      <h2 class="section-headline">Common Questions</h2>
+      <p class="section-subtext">Everything you need to know about our patient acquisition systems.</p>
+    </div>
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <h3>How long does it take to see results?</h3>
+        <p>Most clinics see their first new patient enquiry within 24 hours of going live. Significant growth usually happens within the first 30 days as the system gathers data.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Will this work with my current dental software?</h3>
+        <p>Yes. Our AI booking system can integrate with most major dental practice management software or work as a standalone high-performance lead generator.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I own the website after I pay?</h3>
+        <p>Absolutely. Unlike many agencies that "rent" you a site, you own your Double Paradigm system 100%. We can even host it for you for free on our global edge network.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is the AI booking system safe?</h3>
+        <p>Yes. It is fully GDPR compliant and designed specifically for clinical environments. It handles basic sorting and booking, but always leaves medical advice to your clinicians.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+     ══════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <div class="footer-brand-logo">
+          <div class="footer-logo-box" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+              <path d="M7 10s1 1 5 1 5-1 5-1"/>
+            </svg>
+          </div>
+          <div>
+            <div class="footer-brand-name">Smile Dental Care</div>
+            <div class="footer-brand-tagline">Clinical Excellence · Luxury Care</div>
+          </div>
+        </div>
+        <p class="footer-brand-desc">
+          Providing exceptional dental care with advanced technology and compassionate service. Transforming smiles and lives across London.
+        </p>
+        <div class="footer-social">
+          <a href="https://instagram.com" class="footer-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com" class="footer-social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="tel:+442079460123" class="footer-social-link" aria-label="Call us">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#audit">Free Audit</a></li>
+          <li><a href="#" onclick="Calendly.initPopupWidget({url: window.SITE_CONFIG.CALENDLY_URL}); return false;">Book Now</a></li>
+        </ul>
+      </div>
+      <!-- Our Services -->
+      <div class="footer-col">
+        <h3>Our Services</h3>
+        <ul>
+          <li><span>General Dentistry</span></li>
+          <li><span>Cosmetic Dentistry</span></li>
+          <li><span>Dental Implants</span></li>
+          <li><span>Orthodontics</span></li>
+          <li><span>Teeth Whitening</span></li>
+          <li><span>Porcelain Veneers</span></li>
+        </ul>
+      </div>
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h3>Contact Info</h3>
+        <ul class="footer-contact-list">
+          <li>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+              </svg>
+              <div>
+                <a href="tel:+442079460123">020 7946 0123</a>
+                <span class="footer-contact-sub">WhatsApp Available</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <span>Mon–Fri: 8am – 7pm</span>
+                <span class="footer-contact-sub">Sat: 9am – 5pm</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer">View Location on Map</a>
+                <span class="footer-contact-sub">Harley Street, London, UK</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div><!-- /.footer-grid -->
+    <!-- Footer Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-logo">
+        <div class="footer-logo-box footer-logo-box--sm" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
+          </svg>
+        </div>
+        <span>Smile Dental Care</span>
+      </div>
+      <div class="footer-bottom-copy">
+        © 2026 Smile Dental Care. All rights reserved. |
+        <a href="privacy-policy.html">Privacy</a> ·
+        <a href="cookie-policy.html">Cookies</a> ·
+        <a href="complaints.html">Complaints</a>
+      </div>
+      <button class="footer-back-top" id="backToTop" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</footer>
+<!-- Mobile CTA Bar -->
+<div class="mobile-cta-bar">
+  <a href="tel:+442079460123" aria-label="Call: 020 7946 0123">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.81a16 16 0 0 0 5.64 5.64l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/>
+    </svg>
+    Call Now — 020 7946 0123
+  </a>
+</div>
+<!-- Scripts -->
+<script src="config.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script type="module" src="https://unpkg.com/img-comparison-slider@8/dist/index.js"></script>
+<script defer src="script.js"></script>
+<!-- Netlify Form Detection -->
+<form name="audit-form" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="clinic-name">
+  <input type="text" name="owner-name">
+  <input type="tel" name="phone">
+  <input type="email" name="email">
+  <input type="checkbox" name="gdpr-consent">
+  <input name="bot-field">
+</form>
+<!-- Floating Widgets -->
+<div class="floating-widgets" id="smileChatbot">
+  <a id="whatsappFloatBtn" href="#" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 .018 5.393 0 12.03c0 2.119.554 4.188 1.605 6.046L0 24l6.104-1.602a11.803 11.803 0 005.94 1.605h.005c6.635 0 12.03-5.393 12.035-12.03a11.797 11.797 0 00-3.447-8.411z"/>
+    </svg>
+  </a>
+  <div class="float-btn float-chatbot" id="chatbotFab" aria-label="Open AI Assistant">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <span class="float-badge">1</span>
+  </div>
+  <div class="chatbot-window" id="chatbotWindow">
+    <div class="chatbot-header">
+      <div class="chatbot-header-info">
+        <div class="chatbot-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
+          </svg>
+        </div>
+        <div>
+          <div class="chatbot-name">Smile AI Assistant</div>
+          <div class="chatbot-status">
+            <span class="status-dot"></span>
+            Online · Instant Response
+          </div>
+        </div>
+      </div>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="chatbot-quick-actions">
+      <button class="chat-pill">🦷 Services</button>
+      <button class="chat-pill">💰 Pricing</button>
+      <button class="chat-pill">🚀 Get Started</button>
+      <button class="chat-pill">📈 Results</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="message-row">
+        <div class="message-avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M7 10s1 1 5 1 5-1 5-1"/>
+          </svg>
+        </div>
+        <div class="message assistant">
+          <div class="message-content">
+            Hello! 👋 I'm your Smile AI Assistant.
+            <br><br>
+            Whether you're curious about our <strong>services</strong>, <strong>pricing</strong>, or want to see some <strong>real client results</strong> — just ask. I'm here 24/7 to help you achieve your perfect smile today!
+          </div>
+          <div class="message-time">14:13</div>
+        </div>
+      </div>
+    </div>
+    <form class="chatbot-input-wrap" id="chatbotForm">
+      <textarea id="chatbotInput" placeholder="Ask me anything..." rows="1" required></textarea>
+      <button type="submit" class="chatbot-send" id="chatbotSend" aria-label="Send Message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+    </form>
+    <div class="chatbot-footer">Powered by Smile AI</div>
+  </div>
+</div>
+<!-- Cookie Consent -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle">
+  <div class="cookie-content">
+    <h3 id="cookieTitle">Privacy Preference</h3>
+    <p>We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies as described in our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+    <div class="cookie-btns">
+      <button class="btn btn-secondary" id="cookieDecline">Decline All</button>
+      <button class="btn btn-primary" id="cookieAccept">Accept All</button>
+    </div>
+  </div>
+</div>
+<!-- Offline Game Overlay -->
+<div id="offlineGame">
+  <h2 class="game-title">Oops! You are Offline</h2>
+  <p class="game-sub">While you wait for your connection, help the tooth jump over the sweets!</p>
+  <canvas id="gameCanvas" width="600" height="250"></canvas>
+  <p style="margin-top: 20px; font-weight: 600;">Press SPACE to Jump</p>
+</div>
+</body>
+</html>
+
